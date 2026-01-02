@@ -1,0 +1,445 @@
+{
+  "elements": [
+    {
+      "id": "elem_navbar",
+      "type": "navbar",
+      "name": "Navigation Bar",
+      "description": "Header navigation component",
+      "icon": "Navigation",
+      "category": "blocks",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "logo": "/logo.png",
+        "logoText": "Brand",
+        "links": [
+          { "label": "Home", "href": "/" },
+          { "label": "About", "href": "/about" },
+          { "label": "Services", "href": "/services" },
+          { "label": "Contact", "href": "/contact" }
+        ],
+        "ctaText": "Get Started",
+        "ctaHref": "/signup"
+      },
+      "defaultStyles": {
+        "base": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "padding": "16px 24px",
+          "backgroundColor": { "$palette": "background" },
+          "borderBottom": "1px solid",
+          "borderColor": { "$palette": "border" }
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "logoText",
+          "label": "Logo Text",
+          "type": "text"
+        },
+        {
+          "name": "logo",
+          "label": "Logo Image",
+          "type": "image"
+        },
+        {
+          "name": "ctaText",
+          "label": "CTA Button Text",
+          "type": "text"
+        },
+        {
+          "name": "ctaHref",
+          "label": "CTA Button Link",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "id": "elem_hero",
+      "type": "hero",
+      "name": "Hero Section",
+      "description": "Hero section with title, text, and CTA",
+      "icon": "Sparkles",
+      "category": "blocks",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "title": "Build Amazing Websites",
+        "subtitle": "Create beautiful, responsive websites without writing a single line of code.",
+        "ctaText": "Get Started",
+        "ctaHref": "/signup",
+        "secondaryCtaText": "Learn More",
+        "secondaryCtaHref": "/about",
+        "backgroundImage": ""
+      },
+      "defaultStyles": {
+        "base": {
+          "display": "flex",
+          "flexDirection": "column",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "textAlign": "center",
+          "padding": "80px 24px",
+          "minHeight": "80vh",
+          "backgroundColor": { "$palette": "surface" }
+        },
+        "desktop": {
+          "padding": "120px 48px"
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "subtitle",
+          "label": "Subtitle",
+          "type": "textarea"
+        },
+        {
+          "name": "ctaText",
+          "label": "Primary Button Text",
+          "type": "text"
+        },
+        {
+          "name": "ctaHref",
+          "label": "Primary Button Link",
+          "type": "link"
+        },
+        {
+          "name": "secondaryCtaText",
+          "label": "Secondary Button Text",
+          "type": "text"
+        },
+        {
+          "name": "secondaryCtaHref",
+          "label": "Secondary Button Link",
+          "type": "link"
+        },
+        {
+          "name": "backgroundImage",
+          "label": "Background Image",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "id": "elem_footer",
+      "type": "footer",
+      "name": "Footer",
+      "description": "Website footer component",
+      "icon": "PanelBottom",
+      "category": "blocks",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "companyName": "Company Name",
+        "description": "Building amazing websites since 2024.",
+        "links": [
+          { "label": "Privacy Policy", "href": "/privacy" },
+          { "label": "Terms of Service", "href": "/terms" },
+          { "label": "Contact", "href": "/contact" }
+        ],
+        "copyright": "© 2024 Company Name. All rights reserved."
+      },
+      "defaultStyles": {
+        "base": {
+          "padding": "48px 24px",
+          "backgroundColor": { "$palette": "surface" },
+          "borderTop": "1px solid",
+          "borderColor": { "$palette": "border" }
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "companyName",
+          "label": "Company Name",
+          "type": "text"
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "type": "textarea"
+        },
+        {
+          "name": "copyright",
+          "label": "Copyright Text",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "elem_card",
+      "type": "card",
+      "name": "Card",
+      "description": "Content card component",
+      "icon": "CreditCard",
+      "category": "blocks",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "image": "",
+        "title": "Card Title",
+        "description": "This is a description of the card content. Add more details here.",
+        "linkText": "Learn More",
+        "linkHref": "#"
+      },
+      "defaultStyles": {
+        "base": {
+          "display": "flex",
+          "flexDirection": "column",
+          "backgroundColor": { "$palette": "background" },
+          "borderRadius": { "$settings": "borders.radius.lg" },
+          "boxShadow": { "$settings": "shadows.md" },
+          "overflow": "hidden"
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "image",
+          "label": "Card Image",
+          "type": "image"
+        },
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "text"
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "type": "textarea"
+        },
+        {
+          "name": "linkText",
+          "label": "Link Text",
+          "type": "text"
+        },
+        {
+          "name": "linkHref",
+          "label": "Link URL",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "id": "elem_testimonial",
+      "type": "testimonial",
+      "name": "Testimonial",
+      "description": "Customer testimonial block",
+      "icon": "Quote",
+      "category": "blocks",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "quote": "This product has completely transformed how we work. Highly recommended!",
+        "author": "John Doe",
+        "role": "CEO, Company Inc",
+        "avatar": ""
+      },
+      "defaultStyles": {
+        "base": {
+          "padding": "32px",
+          "backgroundColor": { "$palette": "surface" },
+          "borderRadius": { "$settings": "borders.radius.lg" },
+          "textAlign": "center"
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "quote",
+          "label": "Quote",
+          "type": "textarea",
+          "required": true
+        },
+        {
+          "name": "author",
+          "label": "Author Name",
+          "type": "text"
+        },
+        {
+          "name": "role",
+          "label": "Author Role",
+          "type": "text"
+        },
+        {
+          "name": "avatar",
+          "label": "Avatar Image",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "id": "elem_feature",
+      "type": "feature",
+      "name": "Feature Block",
+      "description": "Feature highlight with icon",
+      "icon": "Zap",
+      "category": "blocks",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "icon": "Zap",
+        "title": "Feature Title",
+        "description": "A brief description of this amazing feature and its benefits."
+      },
+      "defaultStyles": {
+        "base": {
+          "display": "flex",
+          "flexDirection": "column",
+          "alignItems": "center",
+          "textAlign": "center",
+          "padding": "24px"
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "icon",
+          "label": "Icon Name",
+          "type": "text",
+          "placeholder": "Lucide icon name"
+        },
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "text"
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "type": "textarea"
+        }
+      ]
+    },
+    {
+      "id": "elem_cta",
+      "type": "cta",
+      "name": "Call to Action",
+      "description": "CTA section with headline and button",
+      "icon": "Megaphone",
+      "category": "blocks",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "title": "Ready to Get Started?",
+        "description": "Join thousands of satisfied customers today.",
+        "buttonText": "Start Free Trial",
+        "buttonHref": "/signup"
+      },
+      "defaultStyles": {
+        "base": {
+          "display": "flex",
+          "flexDirection": "column",
+          "alignItems": "center",
+          "textAlign": "center",
+          "padding": "64px 24px",
+          "backgroundColor": { "$palette": "primary" }
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "text"
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "type": "text"
+        },
+        {
+          "name": "buttonText",
+          "label": "Button Text",
+          "type": "text"
+        },
+        {
+          "name": "buttonHref",
+          "label": "Button Link",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "id": "elem_pricing",
+      "type": "pricing",
+      "name": "Pricing Card",
+      "description": "Pricing tier card",
+      "icon": "DollarSign",
+      "category": "blocks",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "name": "Pro",
+        "price": "$29",
+        "period": "/month",
+        "description": "Best for growing businesses",
+        "features": [
+          "Unlimited projects",
+          "Priority support",
+          "Advanced analytics",
+          "Custom domain"
+        ],
+        "buttonText": "Get Started",
+        "buttonHref": "/signup",
+        "isPopular": false
+      },
+      "defaultStyles": {
+        "base": {
+          "display": "flex",
+          "flexDirection": "column",
+          "padding": "32px",
+          "backgroundColor": { "$palette": "background" },
+          "borderRadius": { "$settings": "borders.radius.lg" },
+          "border": "1px solid",
+          "borderColor": { "$palette": "border" }
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "name",
+          "label": "Plan Name",
+          "type": "text"
+        },
+        {
+          "name": "price",
+          "label": "Price",
+          "type": "text"
+        },
+        {
+          "name": "period",
+          "label": "Period",
+          "type": "text",
+          "placeholder": "/month, /year"
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "type": "text"
+        },
+        {
+          "name": "buttonText",
+          "label": "Button Text",
+          "type": "text"
+        },
+        {
+          "name": "isPopular",
+          "label": "Mark as Popular",
+          "type": "boolean"
+        }
+      ]
+    }
+  ]
+}
+

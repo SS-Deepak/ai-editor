@@ -1,0 +1,204 @@
+{
+  "layouts": [
+    {
+      "id": "page_layout_blank",
+      "name": "Blank Page",
+      "description": "Empty page with no predefined structure",
+      "thumbnail": "/thumbnails/layout-blank.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "slots": [
+        {
+          "id": "slot_content",
+          "name": "Page Content",
+          "description": "Add any elements here",
+          "minElements": 0,
+          "maxElements": null,
+          "allowedElementTypes": null,
+          "defaultElements": []
+        }
+      ],
+      "fixedElements": {
+        "before": [],
+        "after": []
+      }
+    },
+    {
+      "id": "page_layout_standard",
+      "name": "Standard Page",
+      "description": "Page with header, content area, and footer",
+      "thumbnail": "/thumbnails/layout-standard.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "slots": [
+        {
+          "id": "slot_content",
+          "name": "Main Content",
+          "description": "Add your page content here",
+          "minElements": 0,
+          "maxElements": null,
+          "allowedElementTypes": null,
+          "defaultElements": []
+        }
+      ],
+      "fixedElements": {
+        "before": [
+          {
+            "id": "layout_header",
+            "type": "component",
+            "props": {
+              "componentId": "layout_header_simple"
+            },
+            "styles": {},
+            "isLocked": true,
+            "isHidden": false
+          }
+        ],
+        "after": [
+          {
+            "id": "layout_footer",
+            "type": "component",
+            "props": {
+              "componentId": "layout_footer_simple"
+            },
+            "styles": {},
+            "isLocked": true,
+            "isHidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page_layout_landing",
+      "name": "Landing Page",
+      "description": "Optimized for marketing and conversions",
+      "thumbnail": "/thumbnails/layout-landing.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "slots": [
+        {
+          "id": "slot_hero",
+          "name": "Hero Section",
+          "description": "Add your hero content",
+          "minElements": 0,
+          "maxElements": 1,
+          "allowedElementTypes": ["hero", "section", "container"],
+          "defaultElements": [
+            {
+              "id": "default_hero",
+              "type": "hero",
+              "props": {
+                "title": "Welcome to Your Website",
+                "subtitle": "Create something amazing today",
+                "ctaText": "Get Started",
+                "ctaHref": "/signup"
+              },
+              "styles": {},
+              "isLocked": false,
+              "isHidden": false
+            }
+          ]
+        },
+        {
+          "id": "slot_content",
+          "name": "Main Content",
+          "description": "Add features, testimonials, etc.",
+          "minElements": 0,
+          "maxElements": null,
+          "allowedElementTypes": null,
+          "defaultElements": []
+        },
+        {
+          "id": "slot_cta",
+          "name": "Call to Action",
+          "description": "Final CTA section",
+          "minElements": 0,
+          "maxElements": 1,
+          "allowedElementTypes": ["cta", "section"],
+          "defaultElements": []
+        }
+      ],
+      "fixedElements": {
+        "before": [
+          {
+            "id": "layout_header",
+            "type": "component",
+            "props": {
+              "componentId": "layout_header_simple"
+            },
+            "styles": {},
+            "isLocked": true,
+            "isHidden": false
+          }
+        ],
+        "after": [
+          {
+            "id": "layout_footer",
+            "type": "component",
+            "props": {
+              "componentId": "layout_footer_simple"
+            },
+            "styles": {},
+            "isLocked": true,
+            "isHidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page_layout_sidebar",
+      "name": "Sidebar Layout",
+      "description": "Page with sidebar and main content area",
+      "thumbnail": "/thumbnails/layout-sidebar.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "slots": [
+        {
+          "id": "slot_sidebar",
+          "name": "Sidebar",
+          "description": "Sidebar navigation or widgets",
+          "minElements": 0,
+          "maxElements": null,
+          "allowedElementTypes": null,
+          "defaultElements": []
+        },
+        {
+          "id": "slot_content",
+          "name": "Main Content",
+          "description": "Primary page content",
+          "minElements": 0,
+          "maxElements": null,
+          "allowedElementTypes": null,
+          "defaultElements": []
+        }
+      ],
+      "fixedElements": {
+        "before": [
+          {
+            "id": "layout_header",
+            "type": "component",
+            "props": {
+              "componentId": "layout_header_simple"
+            },
+            "styles": {},
+            "isLocked": true,
+            "isHidden": false
+          }
+        ],
+        "after": [
+          {
+            "id": "layout_footer",
+            "type": "component",
+            "props": {
+              "componentId": "layout_footer_simple"
+            },
+            "styles": {},
+            "isLocked": true,
+            "isHidden": false
+          }
+        ]
+      }
+    }
+  ]
+}
+

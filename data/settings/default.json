@@ -1,0 +1,200 @@
+{
+  "defaultProjectSettings": {
+    "palette": {
+      "id": "palette_ocean_blue",
+      "customOverrides": null
+    },
+    
+    "typography": {
+      "fontFamily": {
+        "primary": "Inter, system-ui, -apple-system, sans-serif",
+        "heading": "Inter, system-ui, -apple-system, sans-serif",
+        "mono": "'JetBrains Mono', 'Fira Code', monospace"
+      },
+      "baseFontSize": "16px",
+      "lineHeight": 1.6,
+      "headingSizes": {
+        "h1": "3rem",
+        "h2": "2.25rem",
+        "h3": "1.875rem",
+        "h4": "1.5rem",
+        "h5": "1.25rem",
+        "h6": "1rem"
+      },
+      "fontWeights": {
+        "normal": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      }
+    },
+    
+    "spacing": {
+      "unit": 4,
+      "scale": [0, 1, 2, 4, 6, 8, 12, 16, 24, 32, 48, 64],
+      "containerPadding": {
+        "mobile": "16px",
+        "tablet": "24px",
+        "desktop": "32px"
+      },
+      "sectionGap": "64px",
+      "elementGap": "16px"
+    },
+    
+    "layout": {
+      "maxWidth": "1200px",
+      "breakpoints": {
+        "mobile": 375,
+        "tablet": 768,
+        "desktop": 1024,
+        "wide": 1440
+      },
+      "defaultAlignment": "left"
+    },
+    
+    "borders": {
+      "radius": {
+        "none": "0",
+        "sm": "4px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "full": "9999px"
+      },
+      "width": {
+        "thin": "1px",
+        "medium": "2px",
+        "thick": "4px"
+      }
+    },
+    
+    "shadows": {
+      "none": "none",
+      "sm": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+      "md": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+      "lg": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+      "xl": "0 25px 50px -12px rgb(0 0 0 / 0.25)"
+    },
+    
+    "transitions": {
+      "fast": "150ms ease",
+      "normal": "200ms ease",
+      "slow": "300ms ease"
+    }
+  },
+  
+  "defaultSeoSettings": {
+    "title": "My Website",
+    "description": "Welcome to my website",
+    "keywords": [],
+    "ogImage": null
+  },
+  
+  "editorDefaults": {
+    "showGrid": true,
+    "snapToGrid": true,
+    "gridSize": 8,
+    "autoSave": true,
+    "autoSaveInterval": 5000,
+    "defaultDevice": "desktop",
+    "zoomLevels": [50, 75, 100, 125, 150],
+    "defaultZoom": 100
+  },
+  
+  "availableFonts": [
+    {
+      "name": "Inter",
+      "family": "Inter, system-ui, sans-serif",
+      "source": "google",
+      "weights": [400, 500, 600, 700]
+    },
+    {
+      "name": "Roboto",
+      "family": "Roboto, sans-serif",
+      "source": "google",
+      "weights": [400, 500, 700]
+    },
+    {
+      "name": "Open Sans",
+      "family": "'Open Sans', sans-serif",
+      "source": "google",
+      "weights": [400, 600, 700]
+    },
+    {
+      "name": "Lato",
+      "family": "Lato, sans-serif",
+      "source": "google",
+      "weights": [400, 700]
+    },
+    {
+      "name": "Poppins",
+      "family": "Poppins, sans-serif",
+      "source": "google",
+      "weights": [400, 500, 600, 700]
+    },
+    {
+      "name": "Montserrat",
+      "family": "Montserrat, sans-serif",
+      "source": "google",
+      "weights": [400, 500, 600, 700]
+    },
+    {
+      "name": "Playfair Display",
+      "family": "'Playfair Display', serif",
+      "source": "google",
+      "weights": [400, 700]
+    },
+    {
+      "name": "Merriweather",
+      "family": "Merriweather, serif",
+      "source": "google",
+      "weights": [400, 700]
+    },
+    {
+      "name": "Source Code Pro",
+      "family": "'Source Code Pro', monospace",
+      "source": "google",
+      "weights": [400, 500, 600]
+    },
+    {
+      "name": "JetBrains Mono",
+      "family": "'JetBrains Mono', monospace",
+      "source": "google",
+      "weights": [400, 500, 700]
+    }
+  ],
+  
+  "elementCategories": [
+    {
+      "id": "basic",
+      "name": "Basic",
+      "icon": "Type",
+      "description": "Text, images, buttons, and more"
+    },
+    {
+      "id": "layout",
+      "name": "Layout",
+      "icon": "Layout",
+      "description": "Containers, grids, and flex boxes"
+    },
+    {
+      "id": "forms",
+      "name": "Forms",
+      "icon": "FileText",
+      "description": "Input fields, buttons, and forms"
+    },
+    {
+      "id": "blocks",
+      "name": "Blocks",
+      "icon": "Package",
+      "description": "Pre-built components"
+    },
+    {
+      "id": "custom",
+      "name": "Custom",
+      "icon": "Star",
+      "description": "Your custom elements"
+    }
+  ]
+}
+

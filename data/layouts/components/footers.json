@@ -1,0 +1,188 @@
+{
+  "layouts": [
+    {
+      "id": "layout_footer_simple",
+      "name": "Simple Footer",
+      "description": "Clean footer with links and copyright",
+      "category": "footer",
+      "thumbnail": "/thumbnails/footer-simple.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "elements": [
+        {
+          "id": "footer_wrapper",
+          "type": "section",
+          "parentId": null,
+          "order": 0,
+          "children": [
+            {
+              "id": "footer_content",
+              "type": "wrapper",
+              "parentId": "footer_wrapper",
+              "order": 0,
+              "children": [
+                {
+                  "id": "footer_top",
+                  "type": "flexbox",
+                  "parentId": "footer_content",
+                  "order": 0,
+                  "children": [
+                    {
+                      "id": "footer_brand",
+                      "type": "stack",
+                      "parentId": "footer_top",
+                      "order": 0,
+                      "children": [
+                        {
+                          "id": "footer_logo",
+                          "type": "text",
+                          "parentId": "footer_brand",
+                          "order": 0,
+                          "children": [],
+                          "props": {
+                            "content": "{{companyName}}",
+                            "tag": "span"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": "20px",
+                              "fontWeight": 700,
+                              "color": { "$palette": "text" }
+                            }
+                          }
+                        },
+                        {
+                          "id": "footer_tagline",
+                          "type": "text",
+                          "parentId": "footer_brand",
+                          "order": 1,
+                          "children": [],
+                          "props": {
+                            "content": "{{description}}",
+                            "tag": "p"
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": "14px",
+                              "color": { "$palette": "textMuted" },
+                              "maxWidth": "300px"
+                            }
+                          }
+                        }
+                      ],
+                      "props": {
+                        "gap": "12px"
+                      },
+                      "styles": {
+                        "base": {
+                          "display": "flex",
+                          "flexDirection": "column",
+                          "gap": "12px"
+                        }
+                      }
+                    }
+                  ],
+                  "props": {
+                    "direction": "column",
+                    "justify": "space-between"
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "gap": "32px"
+                    },
+                    "tablet": {
+                      "flexDirection": "row"
+                    }
+                  }
+                },
+                {
+                  "id": "footer_bottom",
+                  "type": "container",
+                  "parentId": "footer_content",
+                  "order": 1,
+                  "children": [
+                    {
+                      "id": "footer_copyright",
+                      "type": "text",
+                      "parentId": "footer_bottom",
+                      "order": 0,
+                      "children": [],
+                      "props": {
+                        "content": "{{copyright}}",
+                        "tag": "p"
+                      },
+                      "styles": {
+                        "base": {
+                          "fontSize": "14px",
+                          "color": { "$palette": "textMuted" },
+                          "textAlign": "center"
+                        }
+                      }
+                    }
+                  ],
+                  "props": {},
+                  "styles": {
+                    "base": {
+                      "paddingTop": "24px",
+                      "marginTop": "32px",
+                      "borderTop": "1px solid",
+                      "borderColor": { "$palette": "border" }
+                    }
+                  }
+                }
+              ],
+              "props": {},
+              "styles": {
+                "base": {
+                  "display": "flex",
+                  "flexDirection": "column"
+                }
+              }
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": {
+              "padding": "48px 24px",
+              "backgroundColor": { "$palette": "surface" }
+            }
+          }
+        }
+      ],
+      "exposedProps": [
+        {
+          "elementId": "footer_logo",
+          "propPath": "props.content",
+          "label": "Company Name",
+          "type": "text"
+        },
+        {
+          "elementId": "footer_tagline",
+          "propPath": "props.content",
+          "label": "Description",
+          "type": "text"
+        },
+        {
+          "elementId": "footer_copyright",
+          "propPath": "props.content",
+          "label": "Copyright Text",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "layout_footer_columns",
+      "name": "Multi-Column Footer",
+      "description": "Footer with multiple link columns",
+      "category": "footer",
+      "thumbnail": "/thumbnails/footer-columns.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "elements": [],
+      "exposedProps": []
+    }
+  ]
+}
+

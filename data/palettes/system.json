@@ -1,0 +1,260 @@
+{
+  "palettes": [
+    {
+      "id": "palette_brand_purple",
+      "name": "Brand Purple (Default)",
+      "description": "Primary brand palette with purple gradient",
+      "createdBy": "admin",
+      "isPublished": true,
+      "isDefault": true,
+      "colors": {
+        "primary": "#492cdd",
+        "primaryLight": "#ad38e2",
+        "primaryDark": "#3720a8",
+        "primaryGradient": "linear-gradient(to right, #492cdd, #ad38e2)",
+        "primaryHover": "#5c3ee8",
+        
+        "secondary": "#6366f1",
+        "secondaryHover": "#4f46e5",
+        "secondaryLight": "#e0e7ff",
+        "secondaryDark": "#4338ca",
+        
+        "accent": "#f472b6",
+        "accentHover": "#ec4899",
+        
+        "background": "#ffffff",
+        "backgroundDark": "#0f0f0f",
+        "surface": "#f8f9fa",
+        "surfaceDark": "#1e1e1e",
+        "surfaceVariant": "#f1f5f9",
+        "surfaceVariantDark": "#2d2d2d",
+        "surfaceHover": "#e2e8f0",
+        "surfaceHoverDark": "#3d3d3d",
+        
+        "text": "#1a1a2e",
+        "textDark": "#f5f5f5",
+        "textMuted": "#64748b",
+        "textMutedDark": "#a1a1aa",
+        "textInverse": "#ffffff",
+        
+        "border": "#e2e8f0",
+        "borderDark": "#3f3f46",
+        "divider": "#e5e7eb",
+        "dividerDark": "#3f3f46",
+        
+        "success": "#10b981",
+        "successLight": "#d1fae5",
+        "warning": "#f59e0b",
+        "warningLight": "#fef3c7",
+        "error": "#ef4444",
+        "errorLight": "#fee2e2",
+        "info": "#3b82f6",
+        "infoLight": "#dbeafe"
+      }
+    },
+    {
+      "id": "palette_ocean_blue",
+      "name": "Ocean Blue",
+      "description": "Professional blue palette - great for business and tech",
+      "createdBy": "admin",
+      "isPublished": true,
+      "colors": {
+        "primary": "#3B82F6",
+        "primaryLight": "#60a5fa",
+        "primaryDark": "#1e40af",
+        "primaryGradient": "linear-gradient(to right, #3b82f6, #60a5fa)",
+        "primaryHover": "#2563EB",
+        
+        "secondary": "#10B981",
+        "secondaryHover": "#059669",
+        "secondaryLight": "#D1FAE5",
+        "secondaryDark": "#047857",
+        
+        "accent": "#F59E0B",
+        "accentHover": "#D97706",
+        
+        "background": "#ffffff",
+        "backgroundDark": "#0f172a",
+        "surface": "#F9FAFB",
+        "surfaceDark": "#1e293b",
+        "surfaceVariant": "#f1f5f9",
+        "surfaceVariantDark": "#334155",
+        "surfaceHover": "#F3F4F6",
+        "surfaceHoverDark": "#475569",
+        
+        "text": "#1F2937",
+        "textDark": "#f8fafc",
+        "textMuted": "#6B7280",
+        "textMutedDark": "#94a3b8",
+        "textInverse": "#FFFFFF",
+        
+        "border": "#E5E7EB",
+        "borderDark": "#475569",
+        "divider": "#E5E7EB",
+        "dividerDark": "#334155",
+        
+        "success": "#10B981",
+        "successLight": "#d1fae5",
+        "warning": "#F59E0B",
+        "warningLight": "#fef3c7",
+        "error": "#EF4444",
+        "errorLight": "#fee2e2",
+        "info": "#3B82F6",
+        "infoLight": "#dbeafe"
+      }
+    },
+    {
+      "id": "palette_forest_green",
+      "name": "Forest Green",
+      "description": "Natural green palette - perfect for eco and health",
+      "createdBy": "admin",
+      "isPublished": true,
+      "colors": {
+        "primary": "#059669",
+        "primaryLight": "#34d399",
+        "primaryDark": "#065F46",
+        "primaryGradient": "linear-gradient(to right, #059669, #34d399)",
+        "primaryHover": "#047857",
+        
+        "secondary": "#0891B2",
+        "secondaryHover": "#0E7490",
+        "secondaryLight": "#CFFAFE",
+        "secondaryDark": "#155E75",
+        
+        "accent": "#F97316",
+        "accentHover": "#EA580C",
+        
+        "background": "#FFFFFF",
+        "backgroundDark": "#0f1f17",
+        "surface": "#F0FDF4",
+        "surfaceDark": "#14352a",
+        "surfaceVariant": "#dcfce7",
+        "surfaceVariantDark": "#1e4d3d",
+        "surfaceHover": "#DCFCE7",
+        "surfaceHoverDark": "#2d5a48",
+        
+        "text": "#14532D",
+        "textDark": "#ecfdf5",
+        "textMuted": "#4D7C0F",
+        "textMutedDark": "#86efac",
+        "textInverse": "#FFFFFF",
+        
+        "border": "#BBF7D0",
+        "borderDark": "#2d5a48",
+        "divider": "#BBF7D0",
+        "dividerDark": "#1e4d3d",
+        
+        "success": "#22C55E",
+        "successLight": "#dcfce7",
+        "warning": "#EAB308",
+        "warningLight": "#fef9c3",
+        "error": "#DC2626",
+        "errorLight": "#fee2e2",
+        "info": "#0EA5E9",
+        "infoLight": "#e0f2fe"
+      }
+    },
+    {
+      "id": "palette_sunset_orange",
+      "name": "Sunset Orange",
+      "description": "Warm orange palette - energetic and creative",
+      "createdBy": "admin",
+      "isPublished": true,
+      "colors": {
+        "primary": "#F97316",
+        "primaryLight": "#fb923c",
+        "primaryDark": "#C2410C",
+        "primaryGradient": "linear-gradient(to right, #f97316, #fb923c)",
+        "primaryHover": "#EA580C",
+        
+        "secondary": "#EC4899",
+        "secondaryHover": "#DB2777",
+        "secondaryLight": "#FCE7F3",
+        "secondaryDark": "#BE185D",
+        
+        "accent": "#8B5CF6",
+        "accentHover": "#7C3AED",
+        
+        "background": "#FFFBEB",
+        "backgroundDark": "#1c1410",
+        "surface": "#FEF3C7",
+        "surfaceDark": "#2d1f18",
+        "surfaceVariant": "#fde68a",
+        "surfaceVariantDark": "#3d2a1e",
+        "surfaceHover": "#FDE68A",
+        "surfaceHoverDark": "#4d3525",
+        
+        "text": "#78350F",
+        "textDark": "#fef3c7",
+        "textMuted": "#A16207",
+        "textMutedDark": "#fbbf24",
+        "textInverse": "#FFFFFF",
+        
+        "border": "#FCD34D",
+        "borderDark": "#4d3525",
+        "divider": "#FCD34D",
+        "dividerDark": "#3d2a1e",
+        
+        "success": "#22C55E",
+        "successLight": "#dcfce7",
+        "warning": "#EAB308",
+        "warningLight": "#fef9c3",
+        "error": "#DC2626",
+        "errorLight": "#fee2e2",
+        "info": "#3B82F6",
+        "infoLight": "#dbeafe"
+      }
+    },
+    {
+      "id": "palette_midnight_purple",
+      "name": "Midnight Purple",
+      "description": "Dark purple palette - modern and premium",
+      "createdBy": "admin",
+      "isPublished": true,
+      "colors": {
+        "primary": "#8B5CF6",
+        "primaryLight": "#a78bfa",
+        "primaryDark": "#6D28D9",
+        "primaryGradient": "linear-gradient(to right, #8b5cf6, #a78bfa)",
+        "primaryHover": "#7C3AED",
+        
+        "secondary": "#EC4899",
+        "secondaryHover": "#DB2777",
+        "secondaryLight": "#FCE7F3",
+        "secondaryDark": "#BE185D",
+        
+        "accent": "#14B8A6",
+        "accentHover": "#0D9488",
+        
+        "background": "#0F172A",
+        "backgroundDark": "#030712",
+        "surface": "#1E293B",
+        "surfaceDark": "#0f172a",
+        "surfaceVariant": "#334155",
+        "surfaceVariantDark": "#1e293b",
+        "surfaceHover": "#334155",
+        "surfaceHoverDark": "#334155",
+        
+        "text": "#F8FAFC",
+        "textDark": "#f8fafc",
+        "textMuted": "#94A3B8",
+        "textMutedDark": "#94a3b8",
+        "textInverse": "#0F172A",
+        
+        "border": "#475569",
+        "borderDark": "#475569",
+        "divider": "#334155",
+        "dividerDark": "#334155",
+        
+        "success": "#22C55E",
+        "successLight": "#166534",
+        "warning": "#EAB308",
+        "warningLight": "#854d0e",
+        "error": "#EF4444",
+        "errorLight": "#991b1b",
+        "info": "#38BDF8",
+        "infoLight": "#075985"
+      }
+    }
+  ]
+}

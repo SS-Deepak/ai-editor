@@ -1,0 +1,990 @@
+{
+  "layouts": [
+    {
+      "id": "layout_card_basic",
+      "name": "Basic Card",
+      "description": "Simple card with image, title, and description",
+      "category": "cards",
+      "thumbnail": "/thumbnails/card-basic.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": ["card", "basic"],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "card_basic_wrapper",
+          "type": "container",
+          "parentId": null,
+          "order": 0,
+          "children": [
+            {
+              "id": "card_basic_image",
+              "type": "image",
+              "parentId": "card_basic_wrapper",
+              "order": 0,
+              "children": [],
+              "props": {
+                "src": "https://images.unsplash.com/photo-1555421689-d68471e189f2?w=400&h=250&fit=crop",
+                "alt": "Card image"
+              },
+              "styles": {
+                "base": {
+                  "width": "100%",
+                  "height": "200px",
+                  "objectFit": "cover"
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            },
+            {
+              "id": "card_basic_content",
+              "type": "stack",
+              "parentId": "card_basic_wrapper",
+              "order": 1,
+              "children": [
+                {
+                  "id": "card_basic_title",
+                  "type": "heading",
+                  "parentId": "card_basic_content",
+                  "order": 0,
+                  "children": [],
+                  "props": {
+                    "content": "Card Title",
+                    "tag": "h3"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": "20px",
+                      "fontWeight": 600,
+                      "color": { "$palette": "text" },
+                      "marginBottom": "8px"
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "card_basic_description",
+                  "type": "text",
+                  "parentId": "card_basic_content",
+                  "order": 1,
+                  "children": [],
+                  "props": {
+                    "content": "This is a brief description of the card content. Add more details here to engage your visitors.",
+                    "tag": "p"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": "14px",
+                      "lineHeight": 1.6,
+                      "color": { "$palette": "textMuted" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {},
+              "styles": {
+                "base": {
+                  "padding": "20px",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "gap": "8px"
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": {
+              "backgroundColor": { "$palette": "background" },
+              "borderRadius": "12px",
+              "overflow": "hidden",
+              "boxShadow": "0 4px 6px rgba(0,0,0,0.07)",
+              "border": "1px solid",
+              "borderColor": { "$palette": "border" },
+              "transition": "all 0.2s ease"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        {
+          "elementId": "card_basic_image",
+          "propPath": "props.src",
+          "label": "Image",
+          "type": "image"
+        },
+        {
+          "elementId": "card_basic_title",
+          "propPath": "props.content",
+          "label": "Title",
+          "type": "text"
+        },
+        {
+          "elementId": "card_basic_description",
+          "propPath": "props.content",
+          "label": "Description",
+          "type": "textarea"
+        }
+      ]
+    },
+    {
+      "id": "layout_card_horizontal",
+      "name": "Horizontal Card",
+      "description": "Card with side-by-side layout",
+      "category": "cards",
+      "thumbnail": "/thumbnails/card-horizontal.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": ["card", "horizontal"],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "card_horiz_wrapper",
+          "type": "container",
+          "parentId": null,
+          "order": 0,
+          "children": [
+            {
+              "id": "card_horiz_grid",
+              "type": "grid",
+              "parentId": "card_horiz_wrapper",
+              "order": 0,
+              "children": [
+                {
+                  "id": "card_horiz_image",
+                  "type": "image",
+                  "parentId": "card_horiz_grid",
+                  "order": 0,
+                  "children": [],
+                  "props": {
+                    "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+                    "alt": "Card image"
+                  },
+                  "styles": {
+                    "base": {
+                      "width": "100%",
+                      "height": "100%",
+                      "minHeight": "200px",
+                      "objectFit": "cover",
+                      "borderRadius": "8px"
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "card_horiz_content",
+                  "type": "stack",
+                  "parentId": "card_horiz_grid",
+                  "order": 1,
+                  "children": [
+                    {
+                      "id": "card_horiz_tag",
+                      "type": "text",
+                      "parentId": "card_horiz_content",
+                      "order": 0,
+                      "children": [],
+                      "props": {
+                        "content": "FEATURED",
+                        "tag": "span"
+                      },
+                      "styles": {
+                        "base": {
+                          "fontSize": "12px",
+                          "fontWeight": 600,
+                          "color": { "$palette": "primary" },
+                          "letterSpacing": "0.05em"
+                        }
+                      },
+                      "isLocked": false,
+                      "isHidden": false
+                    },
+                    {
+                      "id": "card_horiz_title",
+                      "type": "heading",
+                      "parentId": "card_horiz_content",
+                      "order": 1,
+                      "children": [],
+                      "props": {
+                        "content": "Horizontal Card Title",
+                        "tag": "h3"
+                      },
+                      "styles": {
+                        "base": {
+                          "fontSize": "22px",
+                          "fontWeight": 700,
+                          "color": { "$palette": "text" },
+                          "lineHeight": 1.3
+                        }
+                      },
+                      "isLocked": false,
+                      "isHidden": false
+                    },
+                    {
+                      "id": "card_horiz_description",
+                      "type": "text",
+                      "parentId": "card_horiz_content",
+                      "order": 2,
+                      "children": [],
+                      "props": {
+                        "content": "A longer description that provides more context about this card item. Perfect for blog posts or feature highlights.",
+                        "tag": "p"
+                      },
+                      "styles": {
+                        "base": {
+                          "fontSize": "15px",
+                          "lineHeight": 1.6,
+                          "color": { "$palette": "textMuted" }
+                        }
+                      },
+                      "isLocked": false,
+                      "isHidden": false
+                    },
+                    {
+                      "id": "card_horiz_link",
+                      "type": "link",
+                      "parentId": "card_horiz_content",
+                      "order": 3,
+                      "children": [],
+                      "props": {
+                        "text": "Read more →",
+                        "href": "#"
+                      },
+                      "styles": {
+                        "base": {
+                          "fontSize": "14px",
+                          "fontWeight": 600,
+                          "color": { "$palette": "primary" },
+                          "textDecoration": "none"
+                        }
+                      },
+                      "isLocked": false,
+                      "isHidden": false
+                    }
+                  ],
+                  "props": {},
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "gap": "12px",
+                      "justifyContent": "center",
+                      "padding": "8px 0"
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {},
+              "styles": {
+                "base": {
+                  "display": "grid",
+                  "gridTemplateColumns": "1fr",
+                  "gap": "24px"
+                },
+                "tablet": {
+                  "gridTemplateColumns": "1fr 1.5fr"
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": {
+              "backgroundColor": { "$palette": "background" },
+              "borderRadius": "16px",
+              "padding": "16px",
+              "boxShadow": "0 4px 6px rgba(0,0,0,0.05)",
+              "border": "1px solid",
+              "borderColor": { "$palette": "border" }
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        {
+          "elementId": "card_horiz_image",
+          "propPath": "props.src",
+          "label": "Image",
+          "type": "image"
+        },
+        {
+          "elementId": "card_horiz_tag",
+          "propPath": "props.content",
+          "label": "Tag",
+          "type": "text"
+        },
+        {
+          "elementId": "card_horiz_title",
+          "propPath": "props.content",
+          "label": "Title",
+          "type": "text"
+        },
+        {
+          "elementId": "card_horiz_description",
+          "propPath": "props.content",
+          "label": "Description",
+          "type": "textarea"
+        },
+        {
+          "elementId": "card_horiz_link",
+          "propPath": "props.text",
+          "label": "Link Text",
+          "type": "text"
+        },
+        {
+          "elementId": "card_horiz_link",
+          "propPath": "props.href",
+          "label": "Link URL",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "id": "layout_card_icon",
+      "name": "Icon Card",
+      "description": "Card with icon, great for features",
+      "category": "cards",
+      "thumbnail": "/thumbnails/card-icon.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": ["card", "icon", "feature"],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "card_icon_wrapper",
+          "type": "container",
+          "parentId": null,
+          "order": 0,
+          "children": [
+            {
+              "id": "card_icon_icon_wrapper",
+              "type": "container",
+              "parentId": "card_icon_wrapper",
+              "order": 0,
+              "children": [
+                {
+                  "id": "card_icon_icon",
+                  "type": "icon",
+                  "parentId": "card_icon_icon_wrapper",
+                  "order": 0,
+                  "children": [],
+                  "props": {
+                    "icon": "Zap",
+                    "size": "28"
+                  },
+                  "styles": {
+                    "base": {
+                      "color": { "$palette": "primary" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {},
+              "styles": {
+                "base": {
+                  "width": "56px",
+                  "height": "56px",
+                  "display": "flex",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "backgroundColor": { "$palette": "primaryLight" },
+                  "borderRadius": "12px",
+                  "marginBottom": "20px"
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            },
+            {
+              "id": "card_icon_title",
+              "type": "heading",
+              "parentId": "card_icon_wrapper",
+              "order": 1,
+              "children": [],
+              "props": {
+                "content": "Feature Title",
+                "tag": "h3"
+              },
+              "styles": {
+                "base": {
+                  "fontSize": "18px",
+                  "fontWeight": 600,
+                  "color": { "$palette": "text" },
+                  "marginBottom": "12px"
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            },
+            {
+              "id": "card_icon_description",
+              "type": "text",
+              "parentId": "card_icon_wrapper",
+              "order": 2,
+              "children": [],
+              "props": {
+                "content": "A brief description of this feature and the value it provides to your users.",
+                "tag": "p"
+              },
+              "styles": {
+                "base": {
+                  "fontSize": "14px",
+                  "lineHeight": 1.6,
+                  "color": { "$palette": "textMuted" }
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": {
+              "padding": "28px",
+              "backgroundColor": { "$palette": "surface" },
+              "borderRadius": "16px",
+              "border": "1px solid",
+              "borderColor": { "$palette": "border" }
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        {
+          "elementId": "card_icon_icon",
+          "propPath": "props.icon",
+          "label": "Icon Name",
+          "type": "text"
+        },
+        {
+          "elementId": "card_icon_title",
+          "propPath": "props.content",
+          "label": "Title",
+          "type": "text"
+        },
+        {
+          "elementId": "card_icon_description",
+          "propPath": "props.content",
+          "label": "Description",
+          "type": "textarea"
+        }
+      ]
+    },
+    {
+      "id": "layout_card_pricing",
+      "name": "Pricing Card",
+      "description": "Card designed for pricing plans",
+      "category": "cards",
+      "thumbnail": "/thumbnails/card-pricing.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": ["card", "pricing", "plan"],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "card_pricing_wrapper",
+          "type": "container",
+          "parentId": null,
+          "order": 0,
+          "children": [
+            {
+              "id": "card_pricing_header",
+              "type": "stack",
+              "parentId": "card_pricing_wrapper",
+              "order": 0,
+              "children": [
+                {
+                  "id": "card_pricing_name",
+                  "type": "heading",
+                  "parentId": "card_pricing_header",
+                  "order": 0,
+                  "children": [],
+                  "props": {
+                    "content": "Professional",
+                    "tag": "h3"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": "20px",
+                      "fontWeight": 600,
+                      "color": { "$palette": "text" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "card_pricing_price_wrapper",
+                  "type": "flexbox",
+                  "parentId": "card_pricing_header",
+                  "order": 1,
+                  "children": [
+                    {
+                      "id": "card_pricing_price",
+                      "type": "text",
+                      "parentId": "card_pricing_price_wrapper",
+                      "order": 0,
+                      "children": [],
+                      "props": {
+                        "content": "$49",
+                        "tag": "span"
+                      },
+                      "styles": {
+                        "base": {
+                          "fontSize": "48px",
+                          "fontWeight": 700,
+                          "color": { "$palette": "text" },
+                          "lineHeight": 1
+                        }
+                      },
+                      "isLocked": false,
+                      "isHidden": false
+                    },
+                    {
+                      "id": "card_pricing_period",
+                      "type": "text",
+                      "parentId": "card_pricing_price_wrapper",
+                      "order": 1,
+                      "children": [],
+                      "props": {
+                        "content": "/month",
+                        "tag": "span"
+                      },
+                      "styles": {
+                        "base": {
+                          "fontSize": "16px",
+                          "color": { "$palette": "textMuted" },
+                          "alignSelf": "flex-end",
+                          "marginBottom": "8px"
+                        }
+                      },
+                      "isLocked": false,
+                      "isHidden": false
+                    }
+                  ],
+                  "props": {},
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "baseline",
+                      "gap": "4px"
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "card_pricing_desc",
+                  "type": "text",
+                  "parentId": "card_pricing_header",
+                  "order": 2,
+                  "children": [],
+                  "props": {
+                    "content": "Best for growing teams and businesses",
+                    "tag": "p"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": "14px",
+                      "color": { "$palette": "textMuted" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {},
+              "styles": {
+                "base": {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "gap": "8px",
+                  "paddingBottom": "24px",
+                  "borderBottom": "1px solid",
+                  "borderColor": { "$palette": "border" }
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            },
+            {
+              "id": "card_pricing_features",
+              "type": "stack",
+              "parentId": "card_pricing_wrapper",
+              "order": 1,
+              "children": [
+                {
+                  "id": "card_pricing_feature_1",
+                  "type": "text",
+                  "parentId": "card_pricing_features",
+                  "order": 0,
+                  "children": [],
+                  "props": {
+                    "content": "✓ Unlimited projects",
+                    "tag": "p"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": "14px",
+                      "color": { "$palette": "text" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "card_pricing_feature_2",
+                  "type": "text",
+                  "parentId": "card_pricing_features",
+                  "order": 1,
+                  "children": [],
+                  "props": {
+                    "content": "✓ Priority support",
+                    "tag": "p"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": "14px",
+                      "color": { "$palette": "text" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "card_pricing_feature_3",
+                  "type": "text",
+                  "parentId": "card_pricing_features",
+                  "order": 2,
+                  "children": [],
+                  "props": {
+                    "content": "✓ Advanced analytics",
+                    "tag": "p"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": "14px",
+                      "color": { "$palette": "text" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "card_pricing_feature_4",
+                  "type": "text",
+                  "parentId": "card_pricing_features",
+                  "order": 3,
+                  "children": [],
+                  "props": {
+                    "content": "✓ Custom domain",
+                    "tag": "p"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": "14px",
+                      "color": { "$palette": "text" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {},
+              "styles": {
+                "base": {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "gap": "12px",
+                  "padding": "24px 0"
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            },
+            {
+              "id": "card_pricing_cta",
+              "type": "button",
+              "parentId": "card_pricing_wrapper",
+              "order": 2,
+              "children": [],
+              "props": {
+                "text": "Get Started",
+                "href": "#",
+                "variant": "primary"
+              },
+              "styles": {
+                "base": {
+                  "width": "100%",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "padding": "14px 24px",
+                  "backgroundColor": { "$palette": "primary" },
+                  "color": { "$palette": "textInverse" },
+                  "fontSize": "16px",
+                  "fontWeight": 600,
+                  "borderRadius": "8px",
+                  "border": "none"
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": {
+              "padding": "32px",
+              "backgroundColor": { "$palette": "background" },
+              "borderRadius": "16px",
+              "border": "1px solid",
+              "borderColor": { "$palette": "border" },
+              "boxShadow": "0 4px 12px rgba(0,0,0,0.05)"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        {
+          "elementId": "card_pricing_name",
+          "propPath": "props.content",
+          "label": "Plan Name",
+          "type": "text"
+        },
+        {
+          "elementId": "card_pricing_price",
+          "propPath": "props.content",
+          "label": "Price",
+          "type": "text"
+        },
+        {
+          "elementId": "card_pricing_period",
+          "propPath": "props.content",
+          "label": "Period",
+          "type": "text"
+        },
+        {
+          "elementId": "card_pricing_desc",
+          "propPath": "props.content",
+          "label": "Description",
+          "type": "text"
+        },
+        {
+          "elementId": "card_pricing_cta",
+          "propPath": "props.text",
+          "label": "Button Text",
+          "type": "text"
+        },
+        {
+          "elementId": "card_pricing_cta",
+          "propPath": "props.href",
+          "label": "Button Link",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "id": "layout_card_testimonial",
+      "name": "Testimonial Card",
+      "description": "Card for customer testimonials",
+      "category": "cards",
+      "thumbnail": "/thumbnails/card-testimonial.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": ["card", "testimonial", "review"],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "card_test_wrapper",
+          "type": "container",
+          "parentId": null,
+          "order": 0,
+          "children": [
+            {
+              "id": "card_test_quote",
+              "type": "text",
+              "parentId": "card_test_wrapper",
+              "order": 0,
+              "children": [],
+              "props": {
+                "content": "\"This product has completely transformed how we work. The team is more productive than ever and our clients love the results.\"",
+                "tag": "p"
+              },
+              "styles": {
+                "base": {
+                  "fontSize": "16px",
+                  "lineHeight": 1.7,
+                  "color": { "$palette": "text" },
+                  "fontStyle": "italic",
+                  "marginBottom": "24px"
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            },
+            {
+              "id": "card_test_author",
+              "type": "flexbox",
+              "parentId": "card_test_wrapper",
+              "order": 1,
+              "children": [
+                {
+                  "id": "card_test_avatar",
+                  "type": "image",
+                  "parentId": "card_test_author",
+                  "order": 0,
+                  "children": [],
+                  "props": {
+                    "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+                    "alt": "Author avatar"
+                  },
+                  "styles": {
+                    "base": {
+                      "width": "48px",
+                      "height": "48px",
+                      "borderRadius": "50%",
+                      "objectFit": "cover"
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "card_test_info",
+                  "type": "stack",
+                  "parentId": "card_test_author",
+                  "order": 1,
+                  "children": [
+                    {
+                      "id": "card_test_name",
+                      "type": "text",
+                      "parentId": "card_test_info",
+                      "order": 0,
+                      "children": [],
+                      "props": {
+                        "content": "Sarah Johnson",
+                        "tag": "p"
+                      },
+                      "styles": {
+                        "base": {
+                          "fontSize": "15px",
+                          "fontWeight": 600,
+                          "color": { "$palette": "text" }
+                        }
+                      },
+                      "isLocked": false,
+                      "isHidden": false
+                    },
+                    {
+                      "id": "card_test_role",
+                      "type": "text",
+                      "parentId": "card_test_info",
+                      "order": 1,
+                      "children": [],
+                      "props": {
+                        "content": "CEO, TechCorp",
+                        "tag": "p"
+                      },
+                      "styles": {
+                        "base": {
+                          "fontSize": "14px",
+                          "color": { "$palette": "textMuted" }
+                        }
+                      },
+                      "isLocked": false,
+                      "isHidden": false
+                    }
+                  ],
+                  "props": {},
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "gap": "2px"
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {},
+              "styles": {
+                "base": {
+                  "display": "flex",
+                  "alignItems": "center",
+                  "gap": "16px"
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": {
+              "padding": "32px",
+              "backgroundColor": { "$palette": "surface" },
+              "borderRadius": "16px",
+              "border": "1px solid",
+              "borderColor": { "$palette": "border" }
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        {
+          "elementId": "card_test_quote",
+          "propPath": "props.content",
+          "label": "Quote",
+          "type": "textarea"
+        },
+        {
+          "elementId": "card_test_avatar",
+          "propPath": "props.src",
+          "label": "Avatar",
+          "type": "image"
+        },
+        {
+          "elementId": "card_test_name",
+          "propPath": "props.content",
+          "label": "Name",
+          "type": "text"
+        },
+        {
+          "elementId": "card_test_role",
+          "propPath": "props.content",
+          "label": "Role",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+

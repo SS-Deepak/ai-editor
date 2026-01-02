@@ -1,0 +1,337 @@
+{
+  "elements": [
+    {
+      "id": "elem_form",
+      "type": "form",
+      "name": "Form",
+      "description": "Form container element",
+      "icon": "FileText",
+      "category": "forms",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "name": "contact-form",
+        "action": "",
+        "method": "POST"
+      },
+      "defaultStyles": {
+        "base": {
+          "display": "flex",
+          "flexDirection": "column",
+          "gap": "16px",
+          "width": "100%"
+        }
+      },
+      "allowChildren": true,
+      "allowedChildTypes": ["input", "textarea", "select", "checkbox", "radio", "button", "label", "container"],
+      "propsConfig": [
+        {
+          "name": "name",
+          "label": "Form Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "action",
+          "label": "Submit URL",
+          "type": "text",
+          "placeholder": "/api/submit"
+        }
+      ]
+    },
+    {
+      "id": "elem_input",
+      "type": "input",
+      "name": "Text Input",
+      "description": "Text input field",
+      "icon": "TextCursor",
+      "category": "forms",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "type": "text",
+        "name": "input",
+        "placeholder": "Enter text...",
+        "required": false
+      },
+      "defaultStyles": {
+        "base": {
+          "width": "100%",
+          "padding": "12px 16px",
+          "fontSize": { "$settings": "typography.baseFontSize" },
+          "fontFamily": { "$settings": "typography.fontFamily.primary" },
+          "color": { "$palette": "text" },
+          "backgroundColor": { "$palette": "background" },
+          "border": "1px solid",
+          "borderColor": { "$palette": "border" },
+          "borderRadius": { "$settings": "borders.radius.md" },
+          "outline": "none",
+          "transition": { "$settings": "transitions.fast" }
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "type",
+          "label": "Input Type",
+          "type": "select",
+          "options": [
+            { "label": "Text", "value": "text" },
+            { "label": "Email", "value": "email" },
+            { "label": "Password", "value": "password" },
+            { "label": "Number", "value": "number" },
+            { "label": "Phone", "value": "tel" },
+            { "label": "URL", "value": "url" },
+            { "label": "Date", "value": "date" }
+          ]
+        },
+        {
+          "name": "name",
+          "label": "Field Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "placeholder",
+          "label": "Placeholder",
+          "type": "text"
+        },
+        {
+          "name": "required",
+          "label": "Required",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "id": "elem_textarea",
+      "type": "textarea",
+      "name": "Text Area",
+      "description": "Multi-line text input",
+      "icon": "AlignLeft",
+      "category": "forms",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "name": "message",
+        "placeholder": "Enter your message...",
+        "rows": 4,
+        "required": false
+      },
+      "defaultStyles": {
+        "base": {
+          "width": "100%",
+          "padding": "12px 16px",
+          "fontSize": { "$settings": "typography.baseFontSize" },
+          "fontFamily": { "$settings": "typography.fontFamily.primary" },
+          "color": { "$palette": "text" },
+          "backgroundColor": { "$palette": "background" },
+          "border": "1px solid",
+          "borderColor": { "$palette": "border" },
+          "borderRadius": { "$settings": "borders.radius.md" },
+          "outline": "none",
+          "resize": "vertical",
+          "minHeight": "120px"
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "name",
+          "label": "Field Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "placeholder",
+          "label": "Placeholder",
+          "type": "text"
+        },
+        {
+          "name": "rows",
+          "label": "Rows",
+          "type": "number"
+        },
+        {
+          "name": "required",
+          "label": "Required",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "id": "elem_select",
+      "type": "select",
+      "name": "Dropdown",
+      "description": "Dropdown select field",
+      "icon": "ChevronDown",
+      "category": "forms",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "name": "select",
+        "placeholder": "Select an option...",
+        "options": [
+          { "label": "Option 1", "value": "option1" },
+          { "label": "Option 2", "value": "option2" },
+          { "label": "Option 3", "value": "option3" }
+        ],
+        "required": false
+      },
+      "defaultStyles": {
+        "base": {
+          "width": "100%",
+          "padding": "12px 16px",
+          "fontSize": { "$settings": "typography.baseFontSize" },
+          "fontFamily": { "$settings": "typography.fontFamily.primary" },
+          "color": { "$palette": "text" },
+          "backgroundColor": { "$palette": "background" },
+          "border": "1px solid",
+          "borderColor": { "$palette": "border" },
+          "borderRadius": { "$settings": "borders.radius.md" },
+          "cursor": "pointer"
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "name",
+          "label": "Field Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "placeholder",
+          "label": "Placeholder",
+          "type": "text"
+        },
+        {
+          "name": "required",
+          "label": "Required",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "id": "elem_checkbox",
+      "type": "checkbox",
+      "name": "Checkbox",
+      "description": "Checkbox input",
+      "icon": "CheckSquare",
+      "category": "forms",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "name": "checkbox",
+        "label": "I agree to the terms",
+        "checked": false
+      },
+      "defaultStyles": {
+        "base": {
+          "display": "flex",
+          "alignItems": "center",
+          "gap": "8px",
+          "cursor": "pointer",
+          "fontSize": { "$settings": "typography.baseFontSize" },
+          "color": { "$palette": "text" }
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "name",
+          "label": "Field Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "label",
+          "label": "Label Text",
+          "type": "text"
+        },
+        {
+          "name": "checked",
+          "label": "Default Checked",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "id": "elem_label",
+      "type": "label",
+      "name": "Label",
+      "description": "Form field label",
+      "icon": "Tag",
+      "category": "forms",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "text": "Label",
+        "for": ""
+      },
+      "defaultStyles": {
+        "base": {
+          "display": "block",
+          "fontSize": "14px",
+          "fontWeight": 500,
+          "color": { "$palette": "text" },
+          "marginBottom": "4px"
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "text",
+          "label": "Label Text",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "for",
+          "label": "For Field",
+          "type": "text",
+          "placeholder": "Field name"
+        }
+      ]
+    },
+    {
+      "id": "elem_submit",
+      "type": "submit",
+      "name": "Submit Button",
+      "description": "Form submit button",
+      "icon": "Send",
+      "category": "forms",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "text": "Submit"
+      },
+      "defaultStyles": {
+        "base": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "padding": "12px 32px",
+          "backgroundColor": { "$palette": "primary" },
+          "color": { "$palette": "textInverse" },
+          "fontSize": { "$settings": "typography.baseFontSize" },
+          "fontWeight": 600,
+          "borderRadius": { "$settings": "borders.radius.md" },
+          "border": "none",
+          "cursor": "pointer",
+          "transition": { "$settings": "transitions.normal" }
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "text",
+          "label": "Button Text",
+          "type": "text",
+          "required": true
+        }
+      ]
+    }
+  ]
+}
+

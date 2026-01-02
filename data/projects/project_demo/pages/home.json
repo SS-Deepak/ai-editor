@@ -1,0 +1,545 @@
+{
+  "id": "page_home",
+  "projectId": "project_demo",
+  
+  "name": "Home",
+  "slug": "",
+  
+  "layout": null,
+  
+  "elements": [
+    {
+      "id": "elem_nav_1",
+      "type": "navbar",
+      "parentId": null,
+      "order": 0,
+      "children": [],
+      "props": {
+        "logoText": "My Brand",
+        "logo": "",
+        "links": [
+          { "label": "Home", "href": "/" },
+          { "label": "About", "href": "/about" },
+          { "label": "Contact", "href": "/contact" }
+        ],
+        "ctaText": "Get Started",
+        "ctaHref": "#cta"
+      },
+      "styles": {
+        "base": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "padding": "16px 24px",
+          "backgroundColor": { "$palette": "background" },
+          "borderBottom": "1px solid",
+          "borderColor": { "$palette": "border" },
+          "position": "sticky",
+          "top": "0",
+          "zIndex": 100
+        },
+        "desktop": {
+          "padding": "20px 48px"
+        }
+      },
+      "animations": [],
+      "interactions": [],
+      "isLocked": false,
+      "isHidden": false,
+      "customId": "navbar",
+      "customClasses": []
+    },
+    {
+      "id": "elem_hero_1",
+      "type": "section",
+      "parentId": null,
+      "order": 1,
+      "children": [
+        {
+          "id": "elem_hero_wrapper",
+          "type": "wrapper",
+          "parentId": "elem_hero_1",
+          "order": 0,
+          "children": [
+            {
+              "id": "elem_hero_content",
+              "type": "stack",
+              "parentId": "elem_hero_wrapper",
+              "order": 0,
+              "children": [
+                {
+                  "id": "elem_hero_title",
+                  "type": "heading",
+                  "parentId": "elem_hero_content",
+                  "order": 0,
+                  "children": [],
+                  "props": {
+                    "content": "Build Amazing Websites Without Code",
+                    "tag": "h1"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": "2.5rem",
+                      "fontWeight": 700,
+                      "color": { "$palette": "text" },
+                      "textAlign": "center",
+                      "lineHeight": 1.2
+                    },
+                    "tablet": {
+                      "fontSize": "3rem"
+                    },
+                    "desktop": {
+                      "fontSize": "3.5rem"
+                    }
+                  },
+                  "animations": [
+                    {
+                      "id": "anim_hero_title",
+                      "name": "Fade In Up",
+                      "trigger": { "type": "load" },
+                      "keyframes": [
+                        {
+                          "offset": 0,
+                          "styles": {
+                            "opacity": 0,
+                            "transform": "translateY(20px)"
+                          }
+                        },
+                        {
+                          "offset": 100,
+                          "styles": {
+                            "opacity": 1,
+                            "transform": "translateY(0)"
+                          }
+                        }
+                      ],
+                      "duration": 600,
+                      "delay": 0,
+                      "easing": "ease-out",
+                      "iterations": 1,
+                      "direction": "normal",
+                      "fillMode": "forwards"
+                    }
+                  ],
+                  "interactions": [],
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "elem_hero_subtitle",
+                  "type": "text",
+                  "parentId": "elem_hero_content",
+                  "order": 1,
+                  "children": [],
+                  "props": {
+                    "content": "Create beautiful, responsive websites with our intuitive drag-and-drop editor. No coding required.",
+                    "tag": "p"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": "1.125rem",
+                      "lineHeight": 1.7,
+                      "color": { "$palette": "textMuted" },
+                      "textAlign": "center",
+                      "maxWidth": "600px",
+                      "marginLeft": "auto",
+                      "marginRight": "auto"
+                    },
+                    "desktop": {
+                      "fontSize": "1.25rem"
+                    }
+                  },
+                  "animations": [
+                    {
+                      "id": "anim_hero_subtitle",
+                      "name": "Fade In Up",
+                      "trigger": { "type": "load" },
+                      "keyframes": [
+                        { "offset": 0, "styles": { "opacity": 0, "transform": "translateY(20px)" } },
+                        { "offset": 100, "styles": { "opacity": 1, "transform": "translateY(0)" } }
+                      ],
+                      "duration": 600,
+                      "delay": 100,
+                      "easing": "ease-out",
+                      "iterations": 1,
+                      "direction": "normal",
+                      "fillMode": "forwards"
+                    }
+                  ],
+                  "interactions": [],
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "elem_hero_buttons",
+                  "type": "flexbox",
+                  "parentId": "elem_hero_content",
+                  "order": 2,
+                  "children": [
+                    {
+                      "id": "elem_hero_cta",
+                      "type": "button",
+                      "parentId": "elem_hero_buttons",
+                      "order": 0,
+                      "children": [],
+                      "props": {
+                        "text": "Get Started Free",
+                        "href": "/signup",
+                        "variant": "primary"
+                      },
+                      "styles": {
+                        "base": {
+                          "padding": "14px 28px",
+                          "fontSize": "1rem",
+                          "fontWeight": 600
+                        }
+                      },
+                      "animations": [],
+                      "interactions": [],
+                      "isLocked": false,
+                      "isHidden": false
+                    },
+                    {
+                      "id": "elem_hero_secondary",
+                      "type": "button",
+                      "parentId": "elem_hero_buttons",
+                      "order": 1,
+                      "children": [],
+                      "props": {
+                        "text": "See Examples",
+                        "href": "#examples",
+                        "variant": "outline"
+                      },
+                      "styles": {
+                        "base": {
+                          "padding": "14px 28px",
+                          "fontSize": "1rem",
+                          "fontWeight": 600,
+                          "backgroundColor": "transparent",
+                          "color": { "$palette": "primary" },
+                          "border": "2px solid",
+                          "borderColor": { "$palette": "primary" }
+                        }
+                      },
+                      "animations": [],
+                      "interactions": [],
+                      "isLocked": false,
+                      "isHidden": false
+                    }
+                  ],
+                  "props": {
+                    "direction": "row",
+                    "justify": "center",
+                    "align": "center",
+                    "gap": "16px",
+                    "wrap": "wrap"
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "gap": "12px",
+                      "alignItems": "center"
+                    },
+                    "tablet": {
+                      "flexDirection": "row",
+                      "gap": "16px"
+                    }
+                  },
+                  "animations": [],
+                  "interactions": [],
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {
+                "gap": "24px",
+                "align": "center"
+              },
+              "styles": {
+                "base": {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "alignItems": "center",
+                  "gap": "24px"
+                }
+              },
+              "animations": [],
+              "interactions": [],
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": {}
+          },
+          "animations": [],
+          "interactions": [],
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "props": {},
+      "styles": {
+        "base": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": "80vh",
+          "padding": "64px 24px",
+          "backgroundColor": { "$palette": "surface" }
+        },
+        "desktop": {
+          "padding": "100px 48px"
+        }
+      },
+      "animations": [],
+      "interactions": [],
+      "isLocked": false,
+      "isHidden": false,
+      "customId": "hero",
+      "customClasses": ["hero-section"]
+    },
+    {
+      "id": "elem_features_1",
+      "type": "section",
+      "parentId": null,
+      "order": 2,
+      "children": [
+        {
+          "id": "elem_features_wrapper",
+          "type": "wrapper",
+          "parentId": "elem_features_1",
+          "order": 0,
+          "children": [
+            {
+              "id": "elem_features_title",
+              "type": "heading",
+              "parentId": "elem_features_wrapper",
+              "order": 0,
+              "children": [],
+              "props": {
+                "content": "Why Choose Our Editor?",
+                "tag": "h2"
+              },
+              "styles": {
+                "base": {
+                  "fontSize": "2rem",
+                  "fontWeight": 700,
+                  "color": { "$palette": "text" },
+                  "textAlign": "center",
+                  "marginBottom": "48px"
+                },
+                "desktop": {
+                  "fontSize": "2.5rem"
+                }
+              },
+              "animations": [],
+              "interactions": [],
+              "isLocked": false,
+              "isHidden": false
+            },
+            {
+              "id": "elem_features_grid",
+              "type": "grid",
+              "parentId": "elem_features_wrapper",
+              "order": 1,
+              "children": [
+                {
+                  "id": "elem_feature_1",
+                  "type": "feature",
+                  "parentId": "elem_features_grid",
+                  "order": 0,
+                  "children": [],
+                  "props": {
+                    "icon": "Zap",
+                    "title": "Lightning Fast",
+                    "description": "Build websites in minutes, not hours. Our intuitive interface makes it easy."
+                  },
+                  "styles": {
+                    "base": {
+                      "padding": "24px",
+                      "backgroundColor": { "$palette": "surface" },
+                      "borderRadius": { "$settings": "borders.radius.lg" }
+                    }
+                  },
+                  "animations": [],
+                  "interactions": [],
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "elem_feature_2",
+                  "type": "feature",
+                  "parentId": "elem_features_grid",
+                  "order": 1,
+                  "children": [],
+                  "props": {
+                    "icon": "Palette",
+                    "title": "Beautiful Designs",
+                    "description": "Choose from stunning color palettes and typography that adapt automatically."
+                  },
+                  "styles": {
+                    "base": {
+                      "padding": "24px",
+                      "backgroundColor": { "$palette": "surface" },
+                      "borderRadius": { "$settings": "borders.radius.lg" }
+                    }
+                  },
+                  "animations": [],
+                  "interactions": [],
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "elem_feature_3",
+                  "type": "feature",
+                  "parentId": "elem_features_grid",
+                  "order": 2,
+                  "children": [],
+                  "props": {
+                    "icon": "Smartphone",
+                    "title": "Fully Responsive",
+                    "description": "Your websites look perfect on any device - desktop, tablet, or mobile."
+                  },
+                  "styles": {
+                    "base": {
+                      "padding": "24px",
+                      "backgroundColor": { "$palette": "surface" },
+                      "borderRadius": { "$settings": "borders.radius.lg" }
+                    }
+                  },
+                  "animations": [],
+                  "interactions": [],
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {
+                "columns": "3",
+                "gap": "24px"
+              },
+              "styles": {
+                "base": {
+                  "display": "grid",
+                  "gridTemplateColumns": "1fr",
+                  "gap": "24px"
+                },
+                "tablet": {
+                  "gridTemplateColumns": "repeat(2, 1fr)"
+                },
+                "desktop": {
+                  "gridTemplateColumns": "repeat(3, 1fr)"
+                }
+              },
+              "animations": [],
+              "interactions": [],
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": {}
+          },
+          "animations": [],
+          "interactions": [],
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "props": {},
+      "styles": {
+        "base": {
+          "padding": "64px 24px",
+          "backgroundColor": { "$palette": "background" }
+        },
+        "desktop": {
+          "padding": "100px 48px"
+        }
+      },
+      "animations": [],
+      "interactions": [],
+      "isLocked": false,
+      "isHidden": false,
+      "customId": "features",
+      "customClasses": []
+    },
+    {
+      "id": "elem_cta_1",
+      "type": "cta",
+      "parentId": null,
+      "order": 3,
+      "children": [],
+      "props": {
+        "title": "Ready to Get Started?",
+        "description": "Join thousands of creators building amazing websites today.",
+        "buttonText": "Start Building Free",
+        "buttonHref": "/signup"
+      },
+      "styles": {
+        "base": {
+          "padding": "64px 24px",
+          "backgroundColor": { "$palette": "primary" },
+          "textAlign": "center"
+        },
+        "desktop": {
+          "padding": "80px 48px"
+        }
+      },
+      "animations": [],
+      "interactions": [],
+      "isLocked": false,
+      "isHidden": false,
+      "customId": "cta",
+      "customClasses": []
+    },
+    {
+      "id": "elem_footer_1",
+      "type": "footer",
+      "parentId": null,
+      "order": 4,
+      "children": [],
+      "props": {
+        "companyName": "My Brand",
+        "description": "Building amazing websites since 2024.",
+        "links": [
+          { "label": "Privacy Policy", "href": "/privacy" },
+          { "label": "Terms of Service", "href": "/terms" },
+          { "label": "Contact", "href": "/contact" }
+        ],
+        "copyright": "© 2024 My Brand. All rights reserved."
+      },
+      "styles": {
+        "base": {
+          "padding": "48px 24px",
+          "backgroundColor": { "$palette": "surface" },
+          "borderTop": "1px solid",
+          "borderColor": { "$palette": "border" }
+        }
+      },
+      "animations": [],
+      "interactions": [],
+      "isLocked": false,
+      "isHidden": false,
+      "customId": "footer",
+      "customClasses": []
+    }
+  ],
+  
+  "settings": null,
+  
+  "seo": {
+    "title": "Home | My Demo Website",
+    "description": "Welcome to my amazing demo website built with AI Editor",
+    "ogImage": null,
+    "noIndex": false
+  },
+  
+  "status": "draft",
+  
+  "createdAt": "2024-01-15T00:00:00Z",
+  "updatedAt": "2024-01-15T10:30:00Z"
+}
+

@@ -1,0 +1,191 @@
+{
+  "layouts": [
+    {
+      "id": "layout_header_simple",
+      "name": "Simple Header",
+      "description": "Clean header with logo and navigation",
+      "category": "header",
+      "thumbnail": "/thumbnails/header-simple.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "elements": [
+        {
+          "id": "header_wrapper",
+          "type": "container",
+          "parentId": null,
+          "order": 0,
+          "children": [
+            {
+              "id": "header_content",
+              "type": "flexbox",
+              "parentId": "header_wrapper",
+              "order": 0,
+              "children": [
+                {
+                  "id": "header_logo",
+                  "type": "text",
+                  "parentId": "header_content",
+                  "order": 0,
+                  "children": [],
+                  "props": {
+                    "content": "{{logoText}}",
+                    "tag": "span"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": "24px",
+                      "fontWeight": 700,
+                      "color": {
+                        "$palette": "text"
+                      }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "header_nav",
+                  "type": "flexbox",
+                  "parentId": "header_content",
+                  "order": 1,
+                  "children": [],
+                  "props": {
+                    "links": "{{navLinks}}"
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "none",
+                      "gap": "32px"
+                    },
+                    "tablet": {
+                      "display": "flex"
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "header_cta",
+                  "type": "button",
+                  "parentId": "header_content",
+                  "order": 2,
+                  "children": [],
+                  "props": {
+                    "text": "{{ctaText}}",
+                    "href": "{{ctaHref}}",
+                    "variant": "primary"
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "none"
+                    },
+                    "tablet": {
+                      "display": "inline-flex"
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {
+                "direction": "row",
+                "justify": "space-between",
+                "align": "center"
+              },
+              "styles": {
+                "base": {
+                  "display": "flex",
+                  "justifyContent": "space-between",
+                  "alignItems": "center",
+                  "maxWidth": {
+                    "$settings": "layout.maxWidth"
+                  },
+                  "margin": "0 auto",
+                  "width": "100%"
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": {
+              "padding": "16px 24px",
+              "backgroundColor": {
+                "$palette": "background"
+              },
+              "borderBottom": "1px solid",
+              "borderColor": {
+                "$palette": "border"
+              },
+              "position": "sticky",
+              "top": "0",
+              "zIndex": 100
+            },
+            "desktop": {
+              "padding": "20px 48px"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        {
+          "elementId": "header_logo",
+          "propPath": "props.content",
+          "label": "Logo Text",
+          "type": "text"
+        },
+        {
+          "elementId": "header_cta",
+          "propPath": "props.text",
+          "label": "CTA Button Text",
+          "type": "text"
+        },
+        {
+          "elementId": "header_cta",
+          "propPath": "props.href",
+          "label": "CTA Button Link",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "id": "layout_header_centered",
+      "name": "Centered Header",
+      "description": "Header with centered logo and split navigation",
+      "category": "header",
+      "thumbnail": "/thumbnails/header-centered.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "elements": [
+        {
+          "id": "header_centered_wrapper",
+          "type": "container",
+          "parentId": null,
+          "order": 0,
+          "children": [],
+          "props": {},
+          "styles": {
+            "base": {
+              "padding": "20px 24px",
+              "backgroundColor": {
+                "$palette": "background"
+              },
+              "borderBottom": "1px solid",
+              "borderColor": {
+                "$palette": "border"
+              },
+              "textAlign": "center"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": []
+    }
+  ]
+}
