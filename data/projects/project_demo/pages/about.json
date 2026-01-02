@@ -1,0 +1,173 @@
+{
+  "id": "page_about",
+  "projectId": "project_demo",
+  
+  "name": "About",
+  "slug": "about",
+  
+  "layout": null,
+  
+  "elements": [
+    {
+      "id": "about_nav",
+      "type": "navbar",
+      "parentId": null,
+      "order": 0,
+      "children": [],
+      "props": {
+        "logoText": "My Brand",
+        "links": [
+          { "label": "Home", "href": "/" },
+          { "label": "About", "href": "/about" },
+          { "label": "Contact", "href": "/contact" }
+        ],
+        "ctaText": "Get Started",
+        "ctaHref": "#"
+      },
+      "styles": {
+        "base": {
+          "padding": "16px 24px",
+          "backgroundColor": { "$palette": "background" },
+          "borderBottom": "1px solid",
+          "borderColor": { "$palette": "border" }
+        }
+      },
+      "isLocked": false,
+      "isHidden": false
+    },
+    {
+      "id": "about_hero",
+      "type": "section",
+      "parentId": null,
+      "order": 1,
+      "children": [
+        {
+          "id": "about_title",
+          "type": "heading",
+          "parentId": "about_hero",
+          "order": 0,
+          "children": [],
+          "props": {
+            "content": "About Us",
+            "tag": "h1"
+          },
+          "styles": {
+            "base": {
+              "fontSize": "2.5rem",
+              "fontWeight": 700,
+              "color": { "$palette": "text" },
+              "textAlign": "center"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        },
+        {
+          "id": "about_description",
+          "type": "text",
+          "parentId": "about_hero",
+          "order": 1,
+          "children": [],
+          "props": {
+            "content": "We're on a mission to make website building accessible to everyone. No code required.",
+            "tag": "p"
+          },
+          "styles": {
+            "base": {
+              "fontSize": "1.25rem",
+              "color": { "$palette": "textMuted" },
+              "textAlign": "center",
+              "maxWidth": "600px",
+              "marginLeft": "auto",
+              "marginRight": "auto"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "props": {},
+      "styles": {
+        "base": {
+          "padding": "80px 24px",
+          "backgroundColor": { "$palette": "surface" },
+          "display": "flex",
+          "flexDirection": "column",
+          "alignItems": "center",
+          "gap": "24px"
+        }
+      },
+      "isLocked": false,
+      "isHidden": false
+    },
+    {
+      "id": "about_content",
+      "type": "section",
+      "parentId": null,
+      "order": 2,
+      "children": [
+        {
+          "id": "about_text",
+          "type": "text",
+          "parentId": "about_content",
+          "order": 0,
+          "children": [],
+          "props": {
+            "content": "Our platform empowers creators, entrepreneurs, and businesses to build stunning websites without writing a single line of code. With our intuitive drag-and-drop interface, beautiful color palettes, and responsive designs, you can bring your vision to life in minutes.\n\nWe believe that everyone deserves a beautiful online presence, regardless of technical skill. That's why we've built tools that are both powerful and easy to use.",
+            "tag": "p"
+          },
+          "styles": {
+            "base": {
+              "fontSize": "1rem",
+              "lineHeight": 1.8,
+              "color": { "$palette": "text" },
+              "maxWidth": "800px",
+              "marginLeft": "auto",
+              "marginRight": "auto"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "props": {},
+      "styles": {
+        "base": {
+          "padding": "64px 24px",
+          "backgroundColor": { "$palette": "background" }
+        }
+      },
+      "isLocked": false,
+      "isHidden": false
+    },
+    {
+      "id": "about_footer",
+      "type": "footer",
+      "parentId": null,
+      "order": 3,
+      "children": [],
+      "props": {
+        "companyName": "My Brand",
+        "copyright": "© 2024 My Brand. All rights reserved."
+      },
+      "styles": {
+        "base": {
+          "padding": "48px 24px",
+          "backgroundColor": { "$palette": "surface" }
+        }
+      },
+      "isLocked": false,
+      "isHidden": false
+    }
+  ],
+  
+  "seo": {
+    "title": "About | My Demo Website",
+    "description": "Learn more about our mission and team"
+  },
+  
+  "status": "draft",
+  "createdAt": "2024-01-15T00:00:00Z",
+  "updatedAt": "2024-01-15T10:30:00Z"
+}
+

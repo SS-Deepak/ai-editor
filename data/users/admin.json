@@ -1,0 +1,32 @@
+{
+  "id": "user_admin",
+  "email": "admin@editor.com",
+  "name": "Admin User",
+  "avatar": null,
+  "role": "admin",
+  
+  "preferences": {
+    "defaultPalette": "palette_ocean_blue",
+    "theme": "light",
+    "editorSettings": {
+      "showGrid": true,
+      "snapToGrid": true,
+      "autoSave": true
+    }
+  },
+  
+  "projects": [],
+  "customElements": [],
+  
+  "permissions": {
+    "canManageElements": true,
+    "canManageLayouts": true,
+    "canManagePalettes": true,
+    "canPublishGlobally": true
+  },
+  
+  "createdAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-01-01T00:00:00Z",
+  "lastLoginAt": "2024-01-01T00:00:00Z"
+}
+

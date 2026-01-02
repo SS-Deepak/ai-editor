@@ -1,0 +1,390 @@
+{
+  "elements": [
+    {
+      "id": "elem_text",
+      "type": "text",
+      "name": "Text",
+      "description": "Paragraph text for content",
+      "icon": "Type",
+      "category": "basic",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "content": "Add your text here. Click to edit.",
+        "tag": "p"
+      },
+      "defaultStyles": {
+        "base": {
+          "color": { "$palette": "text" },
+          "fontSize": { "$settings": "typography.baseFontSize" },
+          "lineHeight": { "$settings": "typography.lineHeight" },
+          "fontFamily": { "$settings": "typography.fontFamily.primary" }
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "content",
+          "label": "Text Content",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "Enter your text..."
+        },
+        {
+          "name": "tag",
+          "label": "HTML Tag",
+          "type": "select",
+          "options": [
+            { "label": "Paragraph", "value": "p" },
+            { "label": "Span", "value": "span" },
+            { "label": "Div", "value": "div" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elem_heading",
+      "type": "heading",
+      "name": "Heading",
+      "description": "Heading text (H1-H6)",
+      "icon": "Heading",
+      "category": "basic",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "content": "Your Heading",
+        "tag": "h2"
+      },
+      "defaultStyles": {
+        "base": {
+          "color": { "$palette": "text" },
+          "fontFamily": { "$settings": "typography.fontFamily.heading" },
+          "fontWeight": { "$settings": "typography.fontWeights.bold" },
+          "lineHeight": 1.2,
+          "marginBottom": "16px"
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "content",
+          "label": "Heading Text",
+          "type": "text",
+          "required": true,
+          "placeholder": "Enter heading..."
+        },
+        {
+          "name": "tag",
+          "label": "Heading Level",
+          "type": "select",
+          "options": [
+            { "label": "H1 - Main Title", "value": "h1" },
+            { "label": "H2 - Section Title", "value": "h2" },
+            { "label": "H3 - Subsection", "value": "h3" },
+            { "label": "H4 - Small Heading", "value": "h4" },
+            { "label": "H5 - Minor Heading", "value": "h5" },
+            { "label": "H6 - Smallest", "value": "h6" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elem_button",
+      "type": "button",
+      "name": "Button",
+      "description": "Clickable button element",
+      "icon": "MousePointer2",
+      "category": "basic",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "text": "Click Me",
+        "href": "",
+        "target": "_self",
+        "variant": "primary"
+      },
+      "defaultStyles": {
+        "base": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "gap": "8px",
+          "padding": "12px 24px",
+          "backgroundColor": { "$palette": "primary" },
+          "color": { "$palette": "textInverse" },
+          "fontSize": { "$settings": "typography.baseFontSize" },
+          "fontWeight": 600,
+          "fontFamily": { "$settings": "typography.fontFamily.primary" },
+          "borderRadius": { "$settings": "borders.radius.md" },
+          "border": "none",
+          "cursor": "pointer",
+          "transition": { "$settings": "transitions.normal" },
+          "textDecoration": "none"
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "text",
+          "label": "Button Text",
+          "type": "text",
+          "required": true,
+          "placeholder": "Enter button text..."
+        },
+        {
+          "name": "href",
+          "label": "Link URL",
+          "type": "link",
+          "placeholder": "https://... or /page"
+        },
+        {
+          "name": "target",
+          "label": "Open In",
+          "type": "select",
+          "options": [
+            { "label": "Same Window", "value": "_self" },
+            { "label": "New Tab", "value": "_blank" }
+          ]
+        },
+        {
+          "name": "variant",
+          "label": "Button Style",
+          "type": "select",
+          "options": [
+            { "label": "Primary", "value": "primary" },
+            { "label": "Secondary", "value": "secondary" },
+            { "label": "Outline", "value": "outline" },
+            { "label": "Ghost", "value": "ghost" }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "id": "preset_primary",
+          "name": "Primary",
+          "props": { "variant": "primary" },
+          "styles": {
+            "base": {
+              "backgroundColor": { "$palette": "primary" },
+              "color": { "$palette": "textInverse" }
+            }
+          }
+        },
+        {
+          "id": "preset_secondary",
+          "name": "Secondary",
+          "props": { "variant": "secondary" },
+          "styles": {
+            "base": {
+              "backgroundColor": { "$palette": "secondary" },
+              "color": { "$palette": "textInverse" }
+            }
+          }
+        },
+        {
+          "id": "preset_outline",
+          "name": "Outline",
+          "props": { "variant": "outline" },
+          "styles": {
+            "base": {
+              "backgroundColor": "transparent",
+              "color": { "$palette": "primary" },
+              "border": "2px solid",
+              "borderColor": { "$palette": "primary" }
+            }
+          }
+        },
+        {
+          "id": "preset_ghost",
+          "name": "Ghost",
+          "props": { "variant": "ghost" },
+          "styles": {
+            "base": {
+              "backgroundColor": "transparent",
+              "color": { "$palette": "primary" }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "elem_image",
+      "type": "image",
+      "name": "Image",
+      "description": "Image element",
+      "icon": "Image",
+      "category": "basic",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "src": "/placeholder-image.png",
+        "alt": "Image description",
+        "loading": "lazy"
+      },
+      "defaultStyles": {
+        "base": {
+          "maxWidth": "100%",
+          "height": "auto",
+          "display": "block",
+          "borderRadius": { "$settings": "borders.radius.md" }
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "src",
+          "label": "Image Source",
+          "type": "image",
+          "required": true
+        },
+        {
+          "name": "alt",
+          "label": "Alt Text",
+          "type": "text",
+          "required": true,
+          "placeholder": "Describe the image..."
+        },
+        {
+          "name": "loading",
+          "label": "Loading",
+          "type": "select",
+          "options": [
+            { "label": "Lazy (recommended)", "value": "lazy" },
+            { "label": "Eager", "value": "eager" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elem_link",
+      "type": "link",
+      "name": "Link",
+      "description": "Text link element",
+      "icon": "Link",
+      "category": "basic",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "text": "Click here",
+        "href": "#",
+        "target": "_self"
+      },
+      "defaultStyles": {
+        "base": {
+          "color": { "$palette": "primary" },
+          "textDecoration": "underline",
+          "cursor": "pointer",
+          "transition": { "$settings": "transitions.fast" }
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "text",
+          "label": "Link Text",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "href",
+          "label": "URL",
+          "type": "link",
+          "required": true
+        },
+        {
+          "name": "target",
+          "label": "Open In",
+          "type": "select",
+          "options": [
+            { "label": "Same Window", "value": "_self" },
+            { "label": "New Tab", "value": "_blank" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elem_divider",
+      "type": "divider",
+      "name": "Divider",
+      "description": "Horizontal line divider",
+      "icon": "Minus",
+      "category": "basic",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {},
+      "defaultStyles": {
+        "base": {
+          "width": "100%",
+          "height": "1px",
+          "backgroundColor": { "$palette": "divider" },
+          "margin": "24px 0"
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": []
+    },
+    {
+      "id": "elem_spacer",
+      "type": "spacer",
+      "name": "Spacer",
+      "description": "Empty space element",
+      "icon": "MoveVertical",
+      "category": "basic",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "height": "40px"
+      },
+      "defaultStyles": {
+        "base": {
+          "width": "100%",
+          "height": "40px"
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "height",
+          "label": "Height",
+          "type": "text",
+          "placeholder": "e.g., 40px, 2rem"
+        }
+      ]
+    },
+    {
+      "id": "elem_icon",
+      "type": "icon",
+      "name": "Icon",
+      "description": "Icon element",
+      "icon": "Star",
+      "category": "basic",
+      "createdBy": "admin",
+      "isPublished": true,
+      "defaultProps": {
+        "icon": "Star",
+        "size": "24"
+      },
+      "defaultStyles": {
+        "base": {
+          "display": "inline-flex",
+          "color": { "$palette": "text" }
+        }
+      },
+      "allowChildren": false,
+      "propsConfig": [
+        {
+          "name": "icon",
+          "label": "Icon Name",
+          "type": "text",
+          "placeholder": "Lucide icon name"
+        },
+        {
+          "name": "size",
+          "label": "Size (px)",
+          "type": "number"
+        }
+      ]
+    }
+  ]
+}
+

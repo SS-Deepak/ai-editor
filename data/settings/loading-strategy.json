@@ -1,0 +1,76 @@
+{
+  "streamingConfig": {
+    "enabled": true,
+    "description": "Progressive loading strategy to prevent UI freezing",
+    
+    "chunkSize": {
+      "elements": 10,
+      "description": "Number of elements to load per chunk"
+    },
+    
+    "delays": {
+      "betweenChunks": 16,
+      "initialRender": 0,
+      "description": "Milliseconds delay between chunk renders (16ms = 1 frame)"
+    },
+    
+    "priorities": {
+      "visible": 1,
+      "nearViewport": 2,
+      "offscreen": 3,
+      "description": "Load elements based on viewport visibility"
+    }
+  },
+  
+  "virtualScrolling": {
+    "enabled": true,
+    "overscan": 5,
+    "itemHeight": "auto",
+    "description": "Only render visible elements in layers panel"
+  },
+  
+  "lazyLoading": {
+    "images": true,
+    "heavyComponents": true,
+    "stylePanel": true,
+    "description": "Defer loading of heavy resources"
+  },
+  
+  "suspenseBoundaries": {
+    "canvas": true,
+    "sidebar": true,
+    "stylePanel": true,
+    "layersTree": true,
+    "description": "React Suspense boundaries for each major section"
+  },
+  
+  "skeletonLoading": {
+    "enabled": true,
+    "animationType": "pulse",
+    "components": [
+      "ElementCard",
+      "LayerItem", 
+      "StyleSection",
+      "PageCard"
+    ]
+  },
+  
+  "caching": {
+    "pageData": {
+      "strategy": "stale-while-revalidate",
+      "maxAge": 300000,
+      "description": "Cache page data for 5 minutes"
+    },
+    "elements": {
+      "strategy": "cache-first",
+      "maxAge": 86400000,
+      "description": "Cache element definitions for 24 hours"
+    },
+    "palettes": {
+      "strategy": "cache-first", 
+      "maxAge": 86400000,
+      "description": "Cache palettes for 24 hours"
+    }
+  }
+}
+

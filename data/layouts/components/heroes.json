@@ -1,0 +1,526 @@
+{
+  "layouts": [
+    {
+      "id": "layout_hero_centered",
+      "name": "Centered Hero",
+      "description": "Classic centered hero with headline, subheadline, and CTA buttons",
+      "category": "heroes",
+      "thumbnail": "/thumbnails/hero-centered.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": ["hero", "centered", "landing", "responsive"],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "hero_centered_section",
+          "type": "section",
+          "parentId": null,
+          "order": 0,
+          "className": "min-h-[80vh] flex items-center py-16 md:py-24 lg:py-32",
+          "children": [
+            {
+              "id": "hero_centered_container",
+              "type": "container",
+              "parentId": "hero_centered_section",
+              "order": 0,
+              "className": "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center",
+              "children": [
+                {
+                  "id": "hero_centered_badge",
+                  "type": "text",
+                  "parentId": "hero_centered_container",
+                  "order": 0,
+                  "children": [],
+                  "className": "inline-block px-4 py-2 rounded-full text-sm font-medium mb-6",
+                  "props": {
+                    "content": "✨ Introducing our new feature",
+                    "tag": "span"
+                  },
+                  "styles": {
+                    "base": {
+                      "backgroundColor": { "$palette": "primaryLight" },
+                      "color": { "$palette": "primary" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "hero_centered_title",
+                  "type": "heading",
+                  "parentId": "hero_centered_container",
+                  "order": 1,
+                  "children": [],
+                  "className": "text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6",
+                  "props": {
+                    "content": "Build Beautiful Websites Without Code",
+                    "tag": "h1"
+                  },
+                  "styles": {
+                    "base": {
+                      "color": { "$palette": "text" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "hero_centered_subtitle",
+                  "type": "text",
+                  "parentId": "hero_centered_container",
+                  "order": 2,
+                  "children": [],
+                  "className": "text-lg sm:text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto mb-10",
+                  "props": {
+                    "content": "Create stunning, responsive websites in minutes with our intuitive drag-and-drop editor. No coding skills required.",
+                    "tag": "p"
+                  },
+                  "styles": {
+                    "base": {
+                      "color": { "$palette": "textMuted" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "hero_centered_buttons",
+                  "type": "flexbox",
+                  "parentId": "hero_centered_container",
+                  "order": 3,
+                  "className": "flex flex-col sm:flex-row gap-4 justify-center items-center",
+                  "children": [
+                    {
+                      "id": "hero_centered_cta",
+                      "type": "button",
+                      "parentId": "hero_centered_buttons",
+                      "order": 0,
+                      "children": [],
+                      "className": "w-full sm:w-auto px-8 py-4 text-lg font-semibold rounded-lg transition-all hover:scale-105",
+                      "props": {
+                        "text": "Start Free Trial",
+                        "href": "/signup",
+                        "variant": "primary"
+                      },
+                      "styles": {
+                        "base": {
+                          "backgroundColor": { "$palette": "primary" },
+                          "color": { "$palette": "textInverse" }
+                        }
+                      },
+                      "isLocked": false,
+                      "isHidden": false
+                    },
+                    {
+                      "id": "hero_centered_secondary",
+                      "type": "button",
+                      "parentId": "hero_centered_buttons",
+                      "order": 1,
+                      "children": [],
+                      "className": "w-full sm:w-auto px-8 py-4 text-lg font-semibold rounded-lg border-2 transition-all hover:scale-105",
+                      "props": {
+                        "text": "Watch Demo",
+                        "href": "#demo",
+                        "variant": "outline"
+                      },
+                      "styles": {
+                        "base": {
+                          "backgroundColor": "transparent",
+                          "color": { "$palette": "text" },
+                          "borderColor": { "$palette": "border" }
+                        }
+                      },
+                      "isLocked": false,
+                      "isHidden": false
+                    }
+                  ],
+                  "props": {},
+                  "styles": { "base": {} },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {},
+              "styles": { "base": {} },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": {
+              "backgroundColor": { "$palette": "background" }
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        { "elementId": "hero_centered_badge", "propPath": "props.content", "label": "Badge Text", "type": "text" },
+        { "elementId": "hero_centered_title", "propPath": "props.content", "label": "Headline", "type": "text" },
+        { "elementId": "hero_centered_subtitle", "propPath": "props.content", "label": "Subheadline", "type": "textarea" },
+        { "elementId": "hero_centered_cta", "propPath": "props.text", "label": "Primary Button", "type": "text" },
+        { "elementId": "hero_centered_cta", "propPath": "props.href", "label": "Primary Button Link", "type": "link" },
+        { "elementId": "hero_centered_secondary", "propPath": "props.text", "label": "Secondary Button", "type": "text" }
+      ]
+    },
+    {
+      "id": "layout_hero_split",
+      "name": "Split Hero",
+      "description": "Hero with content on left and image on right - responsive layout",
+      "category": "heroes",
+      "thumbnail": "/thumbnails/hero-split.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": ["hero", "split", "image", "responsive"],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "hero_split_section",
+          "type": "section",
+          "parentId": null,
+          "order": 0,
+          "className": "py-16 md:py-24 lg:py-32",
+          "children": [
+            {
+              "id": "hero_split_container",
+              "type": "container",
+              "parentId": "hero_split_section",
+              "order": 0,
+              "className": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+              "children": [
+                {
+                  "id": "hero_split_grid",
+                  "type": "grid",
+                  "parentId": "hero_split_container",
+                  "order": 0,
+                  "className": "grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center",
+                  "children": [
+                    {
+                      "id": "hero_split_content",
+                      "type": "stack",
+                      "parentId": "hero_split_grid",
+                      "order": 0,
+                      "className": "space-y-6 text-center lg:text-left",
+                      "children": [
+                        {
+                          "id": "hero_split_title",
+                          "type": "heading",
+                          "parentId": "hero_split_content",
+                          "order": 0,
+                          "children": [],
+                          "className": "text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight",
+                          "props": {
+                            "content": "Transform Your Business with AI",
+                            "tag": "h1"
+                          },
+                          "styles": {
+                            "base": {
+                              "color": { "$palette": "text" }
+                            }
+                          },
+                          "isLocked": false,
+                          "isHidden": false
+                        },
+                        {
+                          "id": "hero_split_text",
+                          "type": "text",
+                          "parentId": "hero_split_content",
+                          "order": 1,
+                          "children": [],
+                          "className": "text-lg md:text-xl leading-relaxed",
+                          "props": {
+                            "content": "Leverage the power of artificial intelligence to automate tasks, gain insights, and grow your business faster than ever.",
+                            "tag": "p"
+                          },
+                          "styles": {
+                            "base": {
+                              "color": { "$palette": "textMuted" }
+                            }
+                          },
+                          "isLocked": false,
+                          "isHidden": false
+                        },
+                        {
+                          "id": "hero_split_buttons",
+                          "type": "flexbox",
+                          "parentId": "hero_split_content",
+                          "order": 2,
+                          "className": "flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4",
+                          "children": [
+                            {
+                              "id": "hero_split_cta",
+                              "type": "button",
+                              "parentId": "hero_split_buttons",
+                              "order": 0,
+                              "children": [],
+                              "className": "px-8 py-4 text-lg font-semibold rounded-lg",
+                              "props": {
+                                "text": "Get Started Free",
+                                "href": "/signup",
+                                "variant": "primary"
+                              },
+                              "styles": {
+                                "base": {
+                                  "backgroundColor": { "$palette": "primary" },
+                                  "color": { "$palette": "textInverse" }
+                                }
+                              },
+                              "isLocked": false,
+                              "isHidden": false
+                            }
+                          ],
+                          "props": {},
+                          "styles": { "base": {} },
+                          "isLocked": false,
+                          "isHidden": false
+                        }
+                      ],
+                      "props": {},
+                      "styles": { "base": {} },
+                      "isLocked": false,
+                      "isHidden": false
+                    },
+                    {
+                      "id": "hero_split_image_wrapper",
+                      "type": "container",
+                      "parentId": "hero_split_grid",
+                      "order": 1,
+                      "className": "order-first lg:order-last",
+                      "children": [
+                        {
+                          "id": "hero_split_image",
+                          "type": "image",
+                          "parentId": "hero_split_image_wrapper",
+                          "order": 0,
+                          "children": [],
+                          "className": "w-full h-auto rounded-2xl shadow-2xl",
+                          "props": {
+                            "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800",
+                            "alt": "Hero image"
+                          },
+                          "styles": { "base": {} },
+                          "isLocked": false,
+                          "isHidden": false
+                        }
+                      ],
+                      "props": {},
+                      "styles": { "base": {} },
+                      "isLocked": false,
+                      "isHidden": false
+                    }
+                  ],
+                  "props": {},
+                  "styles": { "base": {} },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {},
+              "styles": { "base": {} },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": {
+              "backgroundColor": { "$palette": "background" }
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        { "elementId": "hero_split_title", "propPath": "props.content", "label": "Headline", "type": "text" },
+        { "elementId": "hero_split_text", "propPath": "props.content", "label": "Description", "type": "textarea" },
+        { "elementId": "hero_split_cta", "propPath": "props.text", "label": "Button Text", "type": "text" },
+        { "elementId": "hero_split_image", "propPath": "props.src", "label": "Hero Image", "type": "image" }
+      ]
+    },
+    {
+      "id": "layout_hero_gradient",
+      "name": "Gradient Hero",
+      "description": "Modern hero with gradient background - fully responsive",
+      "category": "heroes",
+      "thumbnail": "/thumbnails/hero-gradient.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": ["hero", "gradient", "modern", "responsive"],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "hero_gradient_section",
+          "type": "section",
+          "parentId": null,
+          "order": 0,
+          "className": "min-h-[85vh] flex items-center py-20 md:py-28 lg:py-36 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500",
+          "children": [
+            {
+              "id": "hero_gradient_container",
+              "type": "container",
+              "parentId": "hero_gradient_section",
+              "order": 0,
+              "className": "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center",
+              "children": [
+                {
+                  "id": "hero_gradient_title",
+                  "type": "heading",
+                  "parentId": "hero_gradient_container",
+                  "order": 0,
+                  "children": [],
+                  "className": "text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 text-white",
+                  "props": {
+                    "content": "The Future of Web Design",
+                    "tag": "h1"
+                  },
+                  "styles": { "base": {} },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "hero_gradient_subtitle",
+                  "type": "text",
+                  "parentId": "hero_gradient_container",
+                  "order": 1,
+                  "children": [],
+                  "className": "text-lg sm:text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto mb-10 text-white/80",
+                  "props": {
+                    "content": "Build, launch, and scale your digital presence with our all-in-one platform.",
+                    "tag": "p"
+                  },
+                  "styles": { "base": {} },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "hero_gradient_cta",
+                  "type": "button",
+                  "parentId": "hero_gradient_container",
+                  "order": 2,
+                  "children": [],
+                  "className": "px-10 py-5 text-lg font-bold rounded-full bg-white text-indigo-600 hover:bg-gray-100 transition-all hover:scale-105 shadow-xl",
+                  "props": {
+                    "text": "Start Building →",
+                    "href": "/signup",
+                    "variant": "primary"
+                  },
+                  "styles": { "base": {} },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {},
+              "styles": { "base": {} },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": { "base": {} },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        { "elementId": "hero_gradient_title", "propPath": "props.content", "label": "Headline", "type": "text" },
+        { "elementId": "hero_gradient_subtitle", "propPath": "props.content", "label": "Subheadline", "type": "textarea" },
+        { "elementId": "hero_gradient_cta", "propPath": "props.text", "label": "Button Text", "type": "text" },
+        { "elementId": "hero_gradient_cta", "propPath": "props.href", "label": "Button Link", "type": "link" }
+      ]
+    },
+    {
+      "id": "layout_hero_minimal",
+      "name": "Minimal Hero",
+      "description": "Clean, minimal hero with focus on typography - responsive",
+      "category": "heroes",
+      "thumbnail": "/thumbnails/hero-minimal.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": ["hero", "minimal", "clean", "responsive"],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "hero_minimal_section",
+          "type": "section",
+          "parentId": null,
+          "order": 0,
+          "className": "min-h-[70vh] flex items-center py-24 md:py-32 lg:py-40",
+          "children": [
+            {
+              "id": "hero_minimal_container",
+              "type": "container",
+              "parentId": "hero_minimal_section",
+              "order": 0,
+              "className": "max-w-5xl mx-auto px-4 sm:px-6 lg:px-8",
+              "children": [
+                {
+                  "id": "hero_minimal_title",
+                  "type": "heading",
+                  "parentId": "hero_minimal_container",
+                  "order": 0,
+                  "children": [],
+                  "className": "text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-tight tracking-tight mb-8",
+                  "props": {
+                    "content": "Simple. Beautiful. Powerful.",
+                    "tag": "h1"
+                  },
+                  "styles": {
+                    "base": {
+                      "color": { "$palette": "text" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "hero_minimal_link",
+                  "type": "link",
+                  "parentId": "hero_minimal_container",
+                  "order": 1,
+                  "children": [],
+                  "className": "text-lg sm:text-xl font-medium hover:underline",
+                  "props": {
+                    "text": "Explore our work →",
+                    "href": "/work",
+                    "target": "_self"
+                  },
+                  "styles": {
+                    "base": {
+                      "color": { "$palette": "primary" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {},
+              "styles": { "base": {} },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": {
+              "backgroundColor": { "$palette": "background" }
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        { "elementId": "hero_minimal_title", "propPath": "props.content", "label": "Headline", "type": "text" },
+        { "elementId": "hero_minimal_link", "propPath": "props.text", "label": "Link Text", "type": "text" },
+        { "elementId": "hero_minimal_link", "propPath": "props.href", "label": "Link URL", "type": "link" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "layouts": [
+    {
+      "id": "layout_section_features_grid",
+      "name": "Features Grid",
+      "description": "3-column responsive grid of feature cards",
+      "category": "sections",
+      "thumbnail": "/thumbnails/section-features.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": ["section", "features", "grid", "responsive"],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "features_section",
+          "type": "section",
+          "parentId": null,
+          "order": 0,
+          "className": "py-16 md:py-24 lg:py-32",
+          "children": [
+            {
+              "id": "features_container",
+              "type": "container",
+              "parentId": "features_section",
+              "order": 0,
+              "className": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+              "children": [
+                {
+                  "id": "features_header",
+                  "type": "stack",
+                  "parentId": "features_container",
+                  "order": 0,
+                  "className": "text-center mb-12 md:mb-16",
+                  "children": [
+                    {
+                      "id": "features_title",
+                      "type": "heading",
+                      "parentId": "features_header",
+                      "order": 0,
+                      "children": [],
+                      "className": "text-3xl sm:text-4xl md:text-5xl font-bold mb-4",
+                      "props": { "content": "Why Choose Us", "tag": "h2" },
+                      "styles": {
+                        "base": { "color": { "$palette": "text" } }
+                      },
+                      "isLocked": false,
+                      "isHidden": false
+                    },
+                    {
+                      "id": "features_subtitle",
+                      "type": "text",
+                      "parentId": "features_header",
+                      "order": 1,
+                      "children": [],
+                      "className": "text-lg md:text-xl max-w-2xl mx-auto",
+                      "props": { "content": "Everything you need to build amazing products", "tag": "p" },
+                      "styles": {
+                        "base": { "color": { "$palette": "textMuted" } }
+                      },
+                      "isLocked": false,
+                      "isHidden": false
+                    }
+                  ],
+                  "props": {},
+                  "styles": { "base": {} },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "features_grid",
+                  "type": "grid",
+                  "parentId": "features_container",
+                  "order": 1,
+                  "className": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8",
+                  "children": [],
+                  "props": {},
+                  "styles": { "base": {} },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {},
+              "styles": { "base": {} },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": { "backgroundColor": { "$palette": "background" } }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        { "elementId": "features_title", "propPath": "props.content", "label": "Section Title", "type": "text" },
+        { "elementId": "features_subtitle", "propPath": "props.content", "label": "Subtitle", "type": "textarea" }
+      ]
+    },
+    {
+      "id": "layout_section_cta",
+      "name": "Call to Action",
+      "description": "Full-width CTA section with gradient - responsive",
+      "category": "sections",
+      "thumbnail": "/thumbnails/section-cta.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": ["section", "cta", "conversion", "responsive"],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "cta_section",
+          "type": "section",
+          "parentId": null,
+          "order": 0,
+          "className": "py-16 md:py-24 lg:py-32 bg-gradient-to-r from-indigo-600 to-purple-600",
+          "children": [
+            {
+              "id": "cta_container",
+              "type": "container",
+              "parentId": "cta_section",
+              "order": 0,
+              "className": "max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center",
+              "children": [
+                {
+                  "id": "cta_title",
+                  "type": "heading",
+                  "parentId": "cta_container",
+                  "order": 0,
+                  "children": [],
+                  "className": "text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white",
+                  "props": { "content": "Ready to Get Started?", "tag": "h2" },
+                  "styles": { "base": {} },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "cta_text",
+                  "type": "text",
+                  "parentId": "cta_container",
+                  "order": 1,
+                  "children": [],
+                  "className": "text-lg md:text-xl mb-8 text-white/85",
+                  "props": { "content": "Join thousands of satisfied customers today.", "tag": "p" },
+                  "styles": { "base": {} },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "cta_button",
+                  "type": "button",
+                  "parentId": "cta_container",
+                  "order": 2,
+                  "children": [],
+                  "className": "px-8 py-4 text-lg font-bold rounded-lg bg-white text-indigo-600 hover:bg-gray-100 transition-all hover:scale-105 shadow-lg",
+                  "props": { "text": "Start Free Trial", "href": "/signup", "variant": "primary" },
+                  "styles": { "base": {} },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {},
+              "styles": { "base": {} },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": { "base": {} },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        { "elementId": "cta_title", "propPath": "props.content", "label": "Headline", "type": "text" },
+        { "elementId": "cta_text", "propPath": "props.content", "label": "Description", "type": "text" },
+        { "elementId": "cta_button", "propPath": "props.text", "label": "Button Text", "type": "text" },
+        { "elementId": "cta_button", "propPath": "props.href", "label": "Button Link", "type": "link" }
+      ]
+    },
+    {
+      "id": "layout_section_two_column",
+      "name": "Two Column Section",
+      "description": "Content and image side by side - responsive",
+      "category": "sections",
+      "thumbnail": "/thumbnails/section-two-column.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": ["section", "two-column", "image", "responsive"],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "twocol_section",
+          "type": "section",
+          "parentId": null,
+          "order": 0,
+          "className": "py-16 md:py-24",
+          "children": [
+            {
+              "id": "twocol_container",
+              "type": "container",
+              "parentId": "twocol_section",
+              "order": 0,
+              "className": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+              "children": [
+                {
+                  "id": "twocol_grid",
+                  "type": "grid",
+                  "parentId": "twocol_container",
+                  "order": 0,
+                  "className": "grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center",
+                  "children": [
+                    {
+                      "id": "twocol_content",
+                      "type": "stack",
+                      "parentId": "twocol_grid",
+                      "order": 0,
+                      "className": "space-y-6",
+                      "children": [
+                        {
+                          "id": "twocol_label",
+                          "type": "text",
+                          "parentId": "twocol_content",
+                          "order": 0,
+                          "children": [],
+                          "className": "text-sm font-semibold uppercase tracking-wider",
+                          "props": { "content": "About Us", "tag": "span" },
+                          "styles": {
+                            "base": { "color": { "$palette": "primary" } }
+                          },
+                          "isLocked": false,
+                          "isHidden": false
+                        },
+                        {
+                          "id": "twocol_title",
+                          "type": "heading",
+                          "parentId": "twocol_content",
+                          "order": 1,
+                          "children": [],
+                          "className": "text-3xl sm:text-4xl font-bold leading-tight",
+                          "props": { "content": "We Build Products That People Love", "tag": "h2" },
+                          "styles": {
+                            "base": { "color": { "$palette": "text" } }
+                          },
+                          "isLocked": false,
+                          "isHidden": false
+                        },
+                        {
+                          "id": "twocol_description",
+                          "type": "text",
+                          "parentId": "twocol_content",
+                          "order": 2,
+                          "children": [],
+                          "className": "text-lg leading-relaxed",
+                          "props": { "content": "Our team of experts is dedicated to creating innovative solutions that help businesses grow and succeed in today's competitive market.", "tag": "p" },
+                          "styles": {
+                            "base": { "color": { "$palette": "textMuted" } }
+                          },
+                          "isLocked": false,
+                          "isHidden": false
+                        },
+                        {
+                          "id": "twocol_button",
+                          "type": "button",
+                          "parentId": "twocol_content",
+                          "order": 3,
+                          "children": [],
+                          "className": "inline-flex px-6 py-3 text-base font-semibold rounded-lg",
+                          "props": { "text": "Learn More", "href": "/about", "variant": "primary" },
+                          "styles": {
+                            "base": {
+                              "backgroundColor": { "$palette": "primary" },
+                              "color": { "$palette": "textInverse" }
+                            }
+                          },
+                          "isLocked": false,
+                          "isHidden": false
+                        }
+                      ],
+                      "props": {},
+                      "styles": { "base": {} },
+                      "isLocked": false,
+                      "isHidden": false
+                    },
+                    {
+                      "id": "twocol_image",
+                      "type": "image",
+                      "parentId": "twocol_grid",
+                      "order": 1,
+                      "children": [],
+                      "className": "w-full h-auto rounded-2xl shadow-xl",
+                      "props": {
+                        "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800",
+                        "alt": "Team collaboration"
+                      },
+                      "styles": { "base": {} },
+                      "isLocked": false,
+                      "isHidden": false
+                    }
+                  ],
+                  "props": {},
+                  "styles": { "base": {} },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {},
+              "styles": { "base": {} },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": { "backgroundColor": { "$palette": "background" } }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        { "elementId": "twocol_label", "propPath": "props.content", "label": "Label", "type": "text" },
+        { "elementId": "twocol_title", "propPath": "props.content", "label": "Title", "type": "text" },
+        { "elementId": "twocol_description", "propPath": "props.content", "label": "Description", "type": "textarea" },
+        { "elementId": "twocol_button", "propPath": "props.text", "label": "Button Text", "type": "text" },
+        { "elementId": "twocol_image", "propPath": "props.src", "label": "Image", "type": "image" }
+      ]
+    }
+  ]
+}

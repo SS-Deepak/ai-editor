@@ -1,0 +1,225 @@
+{
+  "brand": {
+    "name": "AI Editor",
+    "primaryGradient": "linear-gradient(to right, #492cdd, #ad38e2)",
+    "primaryColor": "#492cdd",
+    "secondaryColor": "#ad38e2"
+  },
+  
+  "materialDesign": {
+    "version": "3.0",
+    "style": "Material You",
+    
+    "elevation": {
+      "level0": "none",
+      "level1": "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+      "level2": "0 3px 6px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.12)",
+      "level3": "0 10px 20px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.10)",
+      "level4": "0 15px 25px rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.05)",
+      "level5": "0 20px 40px rgba(0,0,0,0.2)"
+    },
+    
+    "elevationDark": {
+      "level0": "none",
+      "level1": "0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3)",
+      "level2": "0 3px 6px rgba(0,0,0,0.45), 0 2px 4px rgba(0,0,0,0.35)",
+      "level3": "0 10px 20px rgba(0,0,0,0.5), 0 3px 6px rgba(0,0,0,0.3)",
+      "level4": "0 15px 25px rgba(0,0,0,0.5), 0 5px 10px rgba(0,0,0,0.25)",
+      "level5": "0 20px 40px rgba(0,0,0,0.6)"
+    },
+    
+    "cornerRadius": {
+      "none": "0",
+      "extraSmall": "4px",
+      "small": "8px",
+      "medium": "12px",
+      "large": "16px",
+      "extraLarge": "28px",
+      "full": "9999px"
+    },
+    
+    "stateLayerOpacity": {
+      "hover": "0.08",
+      "focus": "0.12",
+      "pressed": "0.12",
+      "dragged": "0.16"
+    }
+  },
+  
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "onBackground": "#1a1a2e",
+      "surface": "#f8f9fa",
+      "surfaceVariant": "#f1f5f9",
+      "onSurface": "#1a1a2e",
+      "onSurfaceVariant": "#64748b",
+      "outline": "#e2e8f0",
+      "outlineVariant": "#cbd5e1",
+      "primary": "#492cdd",
+      "onPrimary": "#ffffff",
+      "primaryContainer": "#e8e0ff",
+      "onPrimaryContainer": "#1a0066",
+      "secondary": "#6366f1",
+      "onSecondary": "#ffffff",
+      "error": "#ef4444",
+      "onError": "#ffffff",
+      "scrim": "rgba(0, 0, 0, 0.5)"
+    },
+    "dark": {
+      "background": "#0f0f0f",
+      "onBackground": "#f5f5f5",
+      "surface": "#1e1e1e",
+      "surfaceVariant": "#2d2d2d",
+      "onSurface": "#f5f5f5",
+      "onSurfaceVariant": "#a1a1aa",
+      "outline": "#3f3f46",
+      "outlineVariant": "#52525b",
+      "primary": "#b794f6",
+      "onPrimary": "#2d0d7a",
+      "primaryContainer": "#3720a8",
+      "onPrimaryContainer": "#e8e0ff",
+      "secondary": "#a5b4fc",
+      "onSecondary": "#1e1b4b",
+      "error": "#f87171",
+      "onError": "#7f1d1d",
+      "scrim": "rgba(0, 0, 0, 0.7)"
+    }
+  },
+  
+  "typography": {
+    "fontFamilies": {
+      "display": "'Inter', system-ui, -apple-system, sans-serif",
+      "headline": "'Inter', system-ui, -apple-system, sans-serif",
+      "title": "'Inter', system-ui, -apple-system, sans-serif",
+      "body": "'Inter', system-ui, -apple-system, sans-serif",
+      "label": "'Inter', system-ui, -apple-system, sans-serif",
+      "mono": "'JetBrains Mono', 'Fira Code', monospace"
+    },
+    
+    "typeScale": {
+      "displayLarge": { "size": "57px", "lineHeight": "64px", "weight": 400 },
+      "displayMedium": { "size": "45px", "lineHeight": "52px", "weight": 400 },
+      "displaySmall": { "size": "36px", "lineHeight": "44px", "weight": 400 },
+      
+      "headlineLarge": { "size": "32px", "lineHeight": "40px", "weight": 600 },
+      "headlineMedium": { "size": "28px", "lineHeight": "36px", "weight": 600 },
+      "headlineSmall": { "size": "24px", "lineHeight": "32px", "weight": 600 },
+      
+      "titleLarge": { "size": "22px", "lineHeight": "28px", "weight": 500 },
+      "titleMedium": { "size": "16px", "lineHeight": "24px", "weight": 500 },
+      "titleSmall": { "size": "14px", "lineHeight": "20px", "weight": 500 },
+      
+      "bodyLarge": { "size": "16px", "lineHeight": "24px", "weight": 400 },
+      "bodyMedium": { "size": "14px", "lineHeight": "20px", "weight": 400 },
+      "bodySmall": { "size": "12px", "lineHeight": "16px", "weight": 400 },
+      
+      "labelLarge": { "size": "14px", "lineHeight": "20px", "weight": 500 },
+      "labelMedium": { "size": "12px", "lineHeight": "16px", "weight": 500 },
+      "labelSmall": { "size": "11px", "lineHeight": "16px", "weight": 500 }
+    }
+  },
+  
+  "motion": {
+    "easing": {
+      "standard": "cubic-bezier(0.2, 0, 0, 1)",
+      "standardDecelerate": "cubic-bezier(0, 0, 0, 1)",
+      "standardAccelerate": "cubic-bezier(0.3, 0, 1, 1)",
+      "emphasized": "cubic-bezier(0.2, 0, 0, 1)",
+      "emphasizedDecelerate": "cubic-bezier(0.05, 0.7, 0.1, 1)",
+      "emphasizedAccelerate": "cubic-bezier(0.3, 0, 0.8, 0.15)"
+    },
+    
+    "duration": {
+      "short1": "50ms",
+      "short2": "100ms",
+      "short3": "150ms",
+      "short4": "200ms",
+      "medium1": "250ms",
+      "medium2": "300ms",
+      "medium3": "350ms",
+      "medium4": "400ms",
+      "long1": "450ms",
+      "long2": "500ms",
+      "long3": "550ms",
+      "long4": "600ms"
+    }
+  },
+  
+  "spacing": {
+    "0": "0",
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    "4": "16px",
+    "5": "20px",
+    "6": "24px",
+    "8": "32px",
+    "10": "40px",
+    "12": "48px",
+    "16": "64px",
+    "20": "80px",
+    "24": "96px"
+  },
+  
+  "components": {
+    "button": {
+      "height": "40px",
+      "minWidth": "64px",
+      "paddingHorizontal": "24px",
+      "borderRadius": "20px",
+      "iconSize": "18px"
+    },
+    
+    "iconButton": {
+      "size": "40px",
+      "iconSize": "24px",
+      "borderRadius": "20px"
+    },
+    
+    "fab": {
+      "small": { "size": "40px", "iconSize": "24px", "borderRadius": "12px" },
+      "medium": { "size": "56px", "iconSize": "24px", "borderRadius": "16px" },
+      "large": { "size": "96px", "iconSize": "36px", "borderRadius": "28px" }
+    },
+    
+    "card": {
+      "borderRadius": "12px",
+      "padding": "16px",
+      "elevation": "level1"
+    },
+    
+    "input": {
+      "height": "56px",
+      "borderRadius": "4px 4px 0 0",
+      "paddingHorizontal": "16px"
+    },
+    
+    "chip": {
+      "height": "32px",
+      "borderRadius": "8px",
+      "paddingHorizontal": "16px"
+    },
+    
+    "dialog": {
+      "borderRadius": "28px",
+      "padding": "24px",
+      "minWidth": "280px",
+      "maxWidth": "560px"
+    },
+    
+    "sidebar": {
+      "width": "280px",
+      "collapsedWidth": "72px"
+    },
+    
+    "panel": {
+      "width": "320px"
+    },
+    
+    "toolbar": {
+      "height": "56px"
+    }
+  }
+}
+

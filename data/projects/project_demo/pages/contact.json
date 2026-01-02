@@ -1,0 +1,334 @@
+{
+  "id": "page_contact",
+  "projectId": "project_demo",
+  
+  "name": "Contact",
+  "slug": "contact",
+  
+  "layout": null,
+  
+  "elements": [
+    {
+      "id": "contact_nav",
+      "type": "navbar",
+      "parentId": null,
+      "order": 0,
+      "children": [],
+      "props": {
+        "logoText": "My Brand",
+        "links": [
+          { "label": "Home", "href": "/" },
+          { "label": "About", "href": "/about" },
+          { "label": "Contact", "href": "/contact" }
+        ],
+        "ctaText": "Get Started",
+        "ctaHref": "#"
+      },
+      "styles": {
+        "base": {
+          "padding": "16px 24px",
+          "backgroundColor": { "$palette": "background" },
+          "borderBottom": "1px solid",
+          "borderColor": { "$palette": "border" }
+        }
+      },
+      "isLocked": false,
+      "isHidden": false
+    },
+    {
+      "id": "contact_hero",
+      "type": "section",
+      "parentId": null,
+      "order": 1,
+      "children": [
+        {
+          "id": "contact_title",
+          "type": "heading",
+          "parentId": "contact_hero",
+          "order": 0,
+          "children": [],
+          "props": {
+            "content": "Contact Us",
+            "tag": "h1"
+          },
+          "styles": {
+            "base": {
+              "fontSize": "2.5rem",
+              "fontWeight": 700,
+              "color": { "$palette": "text" },
+              "textAlign": "center"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        },
+        {
+          "id": "contact_subtitle",
+          "type": "text",
+          "parentId": "contact_hero",
+          "order": 1,
+          "children": [],
+          "props": {
+            "content": "Have questions? We'd love to hear from you.",
+            "tag": "p"
+          },
+          "styles": {
+            "base": {
+              "fontSize": "1.25rem",
+              "color": { "$palette": "textMuted" },
+              "textAlign": "center"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "props": {},
+      "styles": {
+        "base": {
+          "padding": "64px 24px",
+          "backgroundColor": { "$palette": "surface" },
+          "display": "flex",
+          "flexDirection": "column",
+          "alignItems": "center",
+          "gap": "16px"
+        }
+      },
+      "isLocked": false,
+      "isHidden": false
+    },
+    {
+      "id": "contact_form_section",
+      "type": "section",
+      "parentId": null,
+      "order": 2,
+      "children": [
+        {
+          "id": "contact_form_wrapper",
+          "type": "wrapper",
+          "parentId": "contact_form_section",
+          "order": 0,
+          "children": [
+            {
+              "id": "contact_form",
+              "type": "form",
+              "parentId": "contact_form_wrapper",
+              "order": 0,
+              "children": [
+                {
+                  "id": "form_name_label",
+                  "type": "label",
+                  "parentId": "contact_form",
+                  "order": 0,
+                  "children": [],
+                  "props": {
+                    "text": "Your Name",
+                    "for": "name"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontWeight": 500,
+                      "color": { "$palette": "text" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "form_name",
+                  "type": "input",
+                  "parentId": "contact_form",
+                  "order": 1,
+                  "children": [],
+                  "props": {
+                    "type": "text",
+                    "name": "name",
+                    "placeholder": "John Doe",
+                    "required": true
+                  },
+                  "styles": {
+                    "base": {
+                      "padding": "12px 16px",
+                      "borderRadius": { "$settings": "borders.radius.md" },
+                      "border": "1px solid",
+                      "borderColor": { "$palette": "border" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "form_email_label",
+                  "type": "label",
+                  "parentId": "contact_form",
+                  "order": 2,
+                  "children": [],
+                  "props": {
+                    "text": "Email Address",
+                    "for": "email"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontWeight": 500,
+                      "color": { "$palette": "text" },
+                      "marginTop": "16px"
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "form_email",
+                  "type": "input",
+                  "parentId": "contact_form",
+                  "order": 3,
+                  "children": [],
+                  "props": {
+                    "type": "email",
+                    "name": "email",
+                    "placeholder": "john@example.com",
+                    "required": true
+                  },
+                  "styles": {
+                    "base": {
+                      "padding": "12px 16px",
+                      "borderRadius": { "$settings": "borders.radius.md" },
+                      "border": "1px solid",
+                      "borderColor": { "$palette": "border" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "form_message_label",
+                  "type": "label",
+                  "parentId": "contact_form",
+                  "order": 4,
+                  "children": [],
+                  "props": {
+                    "text": "Your Message",
+                    "for": "message"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontWeight": 500,
+                      "color": { "$palette": "text" },
+                      "marginTop": "16px"
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "form_message",
+                  "type": "textarea",
+                  "parentId": "contact_form",
+                  "order": 5,
+                  "children": [],
+                  "props": {
+                    "name": "message",
+                    "placeholder": "Tell us how we can help...",
+                    "rows": 5,
+                    "required": true
+                  },
+                  "styles": {
+                    "base": {
+                      "padding": "12px 16px",
+                      "borderRadius": { "$settings": "borders.radius.md" },
+                      "border": "1px solid",
+                      "borderColor": { "$palette": "border" },
+                      "minHeight": "150px"
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                },
+                {
+                  "id": "form_submit",
+                  "type": "submit",
+                  "parentId": "contact_form",
+                  "order": 6,
+                  "children": [],
+                  "props": {
+                    "text": "Send Message"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": "24px",
+                      "padding": "14px 32px",
+                      "backgroundColor": { "$palette": "primary" },
+                      "color": { "$palette": "textInverse" },
+                      "fontWeight": 600,
+                      "borderRadius": { "$settings": "borders.radius.md" }
+                    }
+                  },
+                  "isLocked": false,
+                  "isHidden": false
+                }
+              ],
+              "props": {
+                "name": "contact-form",
+                "action": "/api/contact"
+              },
+              "styles": {
+                "base": {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "maxWidth": "500px",
+                  "margin": "0 auto"
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {},
+          "styles": {
+            "base": {}
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "props": {},
+      "styles": {
+        "base": {
+          "padding": "64px 24px",
+          "backgroundColor": { "$palette": "background" }
+        }
+      },
+      "isLocked": false,
+      "isHidden": false
+    },
+    {
+      "id": "contact_footer",
+      "type": "footer",
+      "parentId": null,
+      "order": 3,
+      "children": [],
+      "props": {
+        "companyName": "My Brand",
+        "copyright": "© 2024 My Brand. All rights reserved."
+      },
+      "styles": {
+        "base": {
+          "padding": "48px 24px",
+          "backgroundColor": { "$palette": "surface" }
+        }
+      },
+      "isLocked": false,
+      "isHidden": false
+    }
+  ],
+  
+  "seo": {
+    "title": "Contact | My Demo Website",
+    "description": "Get in touch with us"
+  },
+  
+  "status": "draft",
+  "createdAt": "2024-01-15T00:00:00Z",
+  "updatedAt": "2024-01-15T10:30:00Z"
+}
+

@@ -1,0 +1,139 @@
+{
+  "id": "project_demo",
+  "name": "My Demo Website",
+  "slug": "my-demo-website",
+  "description": "A demo website project to test the editor",
+  "userId": "user_demo",
+  
+  "settings": {
+    "palette": {
+      "id": "palette_ocean_blue",
+      "customOverrides": null
+    },
+    
+    "typography": {
+      "fontFamily": {
+        "primary": "Inter, system-ui, -apple-system, sans-serif",
+        "heading": "Inter, system-ui, -apple-system, sans-serif",
+        "mono": "'JetBrains Mono', 'Fira Code', monospace"
+      },
+      "baseFontSize": "16px",
+      "lineHeight": 1.6,
+      "headingSizes": {
+        "h1": "3rem",
+        "h2": "2.25rem",
+        "h3": "1.875rem",
+        "h4": "1.5rem",
+        "h5": "1.25rem",
+        "h6": "1rem"
+      },
+      "fontWeights": {
+        "normal": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      }
+    },
+    
+    "spacing": {
+      "unit": 4,
+      "scale": [0, 1, 2, 4, 6, 8, 12, 16, 24, 32, 48, 64],
+      "containerPadding": {
+        "mobile": "16px",
+        "tablet": "24px",
+        "desktop": "32px"
+      },
+      "sectionGap": "64px",
+      "elementGap": "16px"
+    },
+    
+    "layout": {
+      "maxWidth": "1200px",
+      "breakpoints": {
+        "mobile": 375,
+        "tablet": 768,
+        "desktop": 1024,
+        "wide": 1440
+      },
+      "defaultAlignment": "left"
+    },
+    
+    "borders": {
+      "radius": {
+        "none": "0",
+        "sm": "4px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "full": "9999px"
+      },
+      "width": {
+        "thin": "1px",
+        "medium": "2px",
+        "thick": "4px"
+      }
+    },
+    
+    "shadows": {
+      "none": "none",
+      "sm": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+      "md": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+      "lg": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+      "xl": "0 25px 50px -12px rgb(0 0 0 / 0.25)"
+    },
+    
+    "transitions": {
+      "fast": "150ms ease",
+      "normal": "200ms ease",
+      "slow": "300ms ease"
+    }
+  },
+  
+  "pages": [
+    {
+      "id": "page_home",
+      "name": "Home",
+      "slug": "",
+      "isHome": true,
+      "order": 0
+    },
+    {
+      "id": "page_about",
+      "name": "About",
+      "slug": "about",
+      "isHome": false,
+      "order": 1
+    },
+    {
+      "id": "page_contact",
+      "name": "Contact",
+      "slug": "contact",
+      "isHome": false,
+      "order": 2
+    }
+  ],
+  
+  "assets": [],
+  
+  "customCode": {
+    "head": "",
+    "bodyStart": "",
+    "bodyEnd": "",
+    "css": ""
+  },
+  
+  "seo": {
+    "title": "My Demo Website",
+    "description": "Welcome to my amazing demo website built with AI Editor",
+    "keywords": ["demo", "website", "editor"],
+    "ogImage": null
+  },
+  
+  "status": "draft",
+  "publishedUrl": null,
+  
+  "createdAt": "2024-01-15T00:00:00Z",
+  "updatedAt": "2024-01-15T10:30:00Z",
+  "publishedAt": null
+}
+

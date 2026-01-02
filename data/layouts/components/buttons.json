@@ -1,0 +1,508 @@
+{
+  "layouts": [
+    {
+      "id": "layout_btn_primary",
+      "name": "Primary Button",
+      "description": "Standard primary button with solid background",
+      "category": "buttons",
+      "thumbnail": "/thumbnails/btn-primary.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": [
+        "button",
+        "cta",
+        "primary"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T13:37:43.703Z",
+      "elements": [
+        {
+          "id": "navbar_1767360856290_rph3cllzu",
+          "type": "navbar",
+          "parentId": null,
+          "order": 0,
+          "children": [],
+          "props": {
+            "logoText": "My Brand",
+            "links": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "About",
+                "href": "/about"
+              },
+              {
+                "label": "Contact",
+                "href": "/contact"
+              }
+            ],
+            "ctaText": "Get Started"
+          },
+          "styles": {
+            "base": {
+              "display": "flex",
+              "alignItems": "center",
+              "justifyContent": "space-between",
+              "padding": "16px 24px",
+              "backgroundColor": {
+                "$palette": "background"
+              },
+              "borderBottom": "1px solid",
+              "borderColor": {
+                "$palette": "border"
+              }
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        },
+        {
+          "id": "footer_1767360894882_yz8p8lxra",
+          "type": "footer",
+          "parentId": null,
+          "order": 3,
+          "children": [],
+          "props": {
+            "companyName": "My Brand",
+            "copyright": "© 2024 My Brand. All rights reserved."
+          },
+          "styles": {
+            "base": {
+              "padding": "48px 24px",
+              "backgroundColor": {
+                "$palette": "surface"
+              },
+              "textAlign": "center"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        {
+          "elementId": "btn_primary_1",
+          "propPath": "props.text",
+          "label": "Button Text",
+          "type": "text"
+        },
+        {
+          "elementId": "btn_primary_1",
+          "propPath": "props.href",
+          "label": "Link URL",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "id": "layout_btn_secondary",
+      "name": "Secondary Button",
+      "description": "Secondary button with softer styling",
+      "category": "buttons",
+      "thumbnail": "/thumbnails/btn-secondary.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": [
+        "button",
+        "secondary"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T13:37:44.734Z",
+      "elements": [
+        {
+          "id": "btn_secondary_1",
+          "type": "button",
+          "parentId": null,
+          "order": 0,
+          "children": [],
+          "props": {
+            "text": "Learn More",
+            "href": "#",
+            "target": "_self",
+            "variant": "secondary"
+          },
+          "styles": {
+            "base": {
+              "display": "inline-flex",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "gap": "8px",
+              "padding": "14px 28px",
+              "backgroundColor": {
+                "$palette": "secondary"
+              },
+              "color": {
+                "$palette": "textInverse"
+              },
+              "fontSize": "16px",
+              "fontWeight": 600,
+              "borderRadius": "8px",
+              "border": "none",
+              "cursor": "pointer",
+              "transition": "all 0.2s ease"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        {
+          "elementId": "btn_secondary_1",
+          "propPath": "props.text",
+          "label": "Button Text",
+          "type": "text"
+        },
+        {
+          "elementId": "btn_secondary_1",
+          "propPath": "props.href",
+          "label": "Link URL",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "id": "layout_btn_outline",
+      "name": "Outline Button",
+      "description": "Button with transparent background and border",
+      "category": "buttons",
+      "thumbnail": "/thumbnails/btn-outline.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": [
+        "button",
+        "outline",
+        "ghost"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "btn_outline_1",
+          "type": "button",
+          "parentId": null,
+          "order": 0,
+          "children": [],
+          "props": {
+            "text": "View Demo",
+            "href": "#",
+            "target": "_self",
+            "variant": "outline"
+          },
+          "styles": {
+            "base": {
+              "display": "inline-flex",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "gap": "8px",
+              "padding": "12px 26px",
+              "backgroundColor": "transparent",
+              "color": {
+                "$palette": "primary"
+              },
+              "fontSize": "16px",
+              "fontWeight": 600,
+              "borderRadius": "8px",
+              "border": "2px solid",
+              "borderColor": {
+                "$palette": "primary"
+              },
+              "cursor": "pointer",
+              "transition": "all 0.2s ease"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        {
+          "elementId": "btn_outline_1",
+          "propPath": "props.text",
+          "label": "Button Text",
+          "type": "text"
+        },
+        {
+          "elementId": "btn_outline_1",
+          "propPath": "props.href",
+          "label": "Link URL",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "id": "layout_btn_gradient",
+      "name": "Gradient Button",
+      "description": "Eye-catching button with gradient background",
+      "category": "buttons",
+      "thumbnail": "/thumbnails/btn-gradient.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": [
+        "button",
+        "gradient",
+        "fancy"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "btn_gradient_1",
+          "type": "button",
+          "parentId": null,
+          "order": 0,
+          "children": [],
+          "props": {
+            "text": "Start Free Trial",
+            "href": "#",
+            "target": "_self",
+            "variant": "primary"
+          },
+          "styles": {
+            "base": {
+              "display": "inline-flex",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "gap": "8px",
+              "padding": "16px 32px",
+              "backgroundImage": {
+                "$palette": "primaryGradient"
+              },
+              "color": {
+                "$palette": "textInverse"
+              },
+              "fontSize": "16px",
+              "fontWeight": 700,
+              "borderRadius": "50px",
+              "border": "none",
+              "cursor": "pointer",
+              "boxShadow": "0 4px 14px rgba(0,0,0,0.15)",
+              "transition": "all 0.3s ease"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        {
+          "elementId": "btn_gradient_1",
+          "propPath": "props.text",
+          "label": "Button Text",
+          "type": "text"
+        },
+        {
+          "elementId": "btn_gradient_1",
+          "propPath": "props.href",
+          "label": "Link URL",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "id": "layout_btn_icon_left",
+      "name": "Button with Left Icon",
+      "description": "Button with an icon on the left side",
+      "category": "buttons",
+      "thumbnail": "/thumbnails/btn-icon-left.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": [
+        "button",
+        "icon"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "btn_icon_left_1",
+          "type": "button",
+          "parentId": null,
+          "order": 0,
+          "children": [],
+          "props": {
+            "text": "Download Now",
+            "href": "#",
+            "target": "_self",
+            "variant": "primary",
+            "iconLeft": "Download"
+          },
+          "styles": {
+            "base": {
+              "display": "inline-flex",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "gap": "10px",
+              "padding": "14px 24px",
+              "backgroundColor": {
+                "$palette": "primary"
+              },
+              "color": {
+                "$palette": "textInverse"
+              },
+              "fontSize": "16px",
+              "fontWeight": 600,
+              "borderRadius": "8px",
+              "border": "none",
+              "cursor": "pointer",
+              "transition": "all 0.2s ease"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        {
+          "elementId": "btn_icon_left_1",
+          "propPath": "props.text",
+          "label": "Button Text",
+          "type": "text"
+        },
+        {
+          "elementId": "btn_icon_left_1",
+          "propPath": "props.href",
+          "label": "Link URL",
+          "type": "link"
+        },
+        {
+          "elementId": "btn_icon_left_1",
+          "propPath": "props.iconLeft",
+          "label": "Icon Name",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "layout_btn_group",
+      "name": "Button Group",
+      "description": "Primary and secondary buttons side by side",
+      "category": "buttons",
+      "thumbnail": "/thumbnails/btn-group.png",
+      "createdBy": "admin",
+      "isPublished": true,
+      "tags": [
+        "button",
+        "group",
+        "cta"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "elements": [
+        {
+          "id": "btn_group_wrapper",
+          "type": "flexbox",
+          "parentId": null,
+          "order": 0,
+          "children": [
+            {
+              "id": "btn_group_primary",
+              "type": "button",
+              "parentId": "btn_group_wrapper",
+              "order": 0,
+              "children": [],
+              "props": {
+                "text": "Get Started",
+                "href": "#",
+                "variant": "primary"
+              },
+              "styles": {
+                "base": {
+                  "display": "inline-flex",
+                  "alignItems": "center",
+                  "padding": "14px 28px",
+                  "backgroundColor": {
+                    "$palette": "primary"
+                  },
+                  "color": {
+                    "$palette": "textInverse"
+                  },
+                  "fontSize": "16px",
+                  "fontWeight": 600,
+                  "borderRadius": "8px",
+                  "border": "none"
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            },
+            {
+              "id": "btn_group_secondary",
+              "type": "button",
+              "parentId": "btn_group_wrapper",
+              "order": 1,
+              "children": [],
+              "props": {
+                "text": "Learn More",
+                "href": "#",
+                "variant": "outline"
+              },
+              "styles": {
+                "base": {
+                  "display": "inline-flex",
+                  "alignItems": "center",
+                  "padding": "12px 26px",
+                  "backgroundColor": "transparent",
+                  "color": {
+                    "$palette": "primary"
+                  },
+                  "fontSize": "16px",
+                  "fontWeight": 600,
+                  "borderRadius": "8px",
+                  "border": "2px solid",
+                  "borderColor": {
+                    "$palette": "primary"
+                  }
+                }
+              },
+              "isLocked": false,
+              "isHidden": false
+            }
+          ],
+          "props": {
+            "direction": "row",
+            "align": "center"
+          },
+          "styles": {
+            "base": {
+              "display": "flex",
+              "flexDirection": "row",
+              "gap": "16px",
+              "flexWrap": "wrap"
+            }
+          },
+          "isLocked": false,
+          "isHidden": false
+        }
+      ],
+      "exposedProps": [
+        {
+          "elementId": "btn_group_primary",
+          "propPath": "props.text",
+          "label": "Primary Button Text",
+          "type": "text"
+        },
+        {
+          "elementId": "btn_group_primary",
+          "propPath": "props.href",
+          "label": "Primary Button Link",
+          "type": "link"
+        },
+        {
+          "elementId": "btn_group_secondary",
+          "propPath": "props.text",
+          "label": "Secondary Button Text",
+          "type": "text"
+        },
+        {
+          "elementId": "btn_group_secondary",
+          "propPath": "props.href",
+          "label": "Secondary Button Link",
+          "type": "link"
+        }
+      ]
+    }
+  ]
+}
